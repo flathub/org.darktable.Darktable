@@ -40,14 +40,22 @@
             "name": "lensfun",
             "cmake": true,
             "config-opts": [
-                "-DCMAKE_INSTALL_LIBDIR=/app/lib"
+                "-DCMAKE_INSTALL_LIBDIR=/app/lib",
+                "-DBUILD_FOR_SSE=0",
+                "-DBUILD_FOR_SSE2=0"
             ],
             "build-options": {
                 "arch": {
-                    "aarch64": {
+                    "i386": {
                         "config-opts": [
-                            "-DBUILD_FOR_SSE=0",
-                            "-DBUILD_FOR_SSE2=0"
+                            "-DBUILD_FOR_SSE=1",
+                            "-DBUILD_FOR_SSE2=1"
+                        ]
+                    },
+                    "x86_64": {
+                        "config-opts": [
+                            "-DBUILD_FOR_SSE=1",
+                            "-DBUILD_FOR_SSE2=1"
                         ]
                     }
                 }
