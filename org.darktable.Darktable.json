@@ -136,8 +136,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/darktable-org/darktable/releases/download/release-2.2.5/darktable-2.2.5.tar.xz",
-                    "sha256": "e303a42b33f78eb1f48d3b36d1df46f30873df4c5a7b49605314f61c49fbf281"
+                    "url": "https://github.com/darktable-org/darktable/releases/download/release-2.4.0/darktable-2.4.0.tar.xz",
+                    "sha256": "9d37388aee79d5ada71062bbac3cda612a61d1a781f6320b784b27308f3a1878"
                 }
             ]
         }
