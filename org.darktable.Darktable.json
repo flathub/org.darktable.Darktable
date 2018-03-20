@@ -9,6 +9,7 @@
     "rename-icon": "darktable",
     "finish-args": [
         "--share=ipc",
+        "--share=network",
         "--socket=x11",
         "--filesystem=host",
         "--talk-name=org.freedesktop.secrets",
