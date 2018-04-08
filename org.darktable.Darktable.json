@@ -6,7 +6,7 @@
     "command": "darktable",
     "rename-desktop-file": "darktable.desktop",
     "rename-appdata-file": "darktable.appdata.xml",
-    "rename-icon": "darktable",
+    "rename-icon": "Darktable",
     "finish-args": [
         "--share=ipc",
         "--share=network",
