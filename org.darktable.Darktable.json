@@ -66,10 +66,9 @@
             },
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://git.code.sf.net/p/lensfun/code",
-                    "branch": "master",
-                    "commit": "505fc47dd2b7cf3769c3e6f4308872f8dcbbdea8"
+                    "type": "archive",
+                    "url": "https://iweb.dl.sourceforge.net/project/lensfun/0.3.2/lensfun-0.3.2.tar.gz",
+                    "sha256": "ae8bcad46614ca47f5bda65b00af4a257a9564a61725df9c74cb260da544d331"
                 }
             ]
         },
