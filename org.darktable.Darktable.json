@@ -68,7 +68,6 @@
                 {
                     "type": "git",
                     "url": "https://git.code.sf.net/p/lensfun/code",
-                    "branch": "master",
                     "commit": "505fc47dd2b7cf3769c3e6f4308872f8dcbbdea8"
                 }
             ]
