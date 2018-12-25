@@ -132,8 +132,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/gphoto/libgphoto/2.5.19/libgphoto2-2.5.19.tar.bz2",
-                    "sha256": "62523e52e3b8542301e072635b518387f2bd0948347775cf10cb2da9a6612c63"
+                    "url": "https://downloads.sourceforge.net/project/gphoto/libgphoto/2.5.21/libgphoto2-2.5.21.tar.bz2",
+                    "sha256": "c5572b1a52af32a40ca6a014682f7548bfb58d47109ad77fba29ec295b448bb1"
                 }
             ]
         },
