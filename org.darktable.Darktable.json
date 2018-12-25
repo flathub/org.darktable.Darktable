@@ -79,7 +79,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.exiv2.org/builds/exiv2-0.26-trunk.tar.gz",
+                    "url": "http://www.exiv2.org/releases/exiv2-0.26-trunk.tar.gz",
                     "sha256": "c75e3c4a0811bf700d92c82319373b7a825a2331c12b8b37d41eb58e4f18eafb"
                 }
             ]
@@ -151,8 +151,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/darktable-org/darktable/releases/download/release-2.4.4/darktable-2.4.4.tar.xz",
-                    "sha256": "964320b8c9ffef680fa0407a6ca16ed5136ad1f449572876e262764e78acb04d"
+                    "url": "https://github.com/darktable-org/darktable/releases/download/release-2.6.0/darktable-2.6.0.tar.xz",
+                    "sha256": "483d7d8e4ac532d89efc2f24e169f7a7da2d3ef0c599602b658d67a040670478"
                 }
             ]
         }
