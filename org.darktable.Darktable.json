@@ -79,7 +79,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.exiv2.org/builds/exiv2-0.26-trunk.tar.gz",
+                    "url": "http://www.exiv2.org/releases/exiv2-0.26-trunk.tar.gz",
                     "sha256": "c75e3c4a0811bf700d92c82319373b7a825a2331c12b8b37d41eb58e4f18eafb"
                 }
             ]
@@ -132,8 +132,18 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/gphoto/libgphoto/2.5.19/libgphoto2-2.5.19.tar.bz2",
-                    "sha256": "62523e52e3b8542301e072635b518387f2bd0948347775cf10cb2da9a6612c63"
+                    "url": "https://downloads.sourceforge.net/project/gphoto/libgphoto/2.5.21/libgphoto2-2.5.21.tar.bz2",
+                    "sha256": "c5572b1a52af32a40ca6a014682f7548bfb58d47109ad77fba29ec295b448bb1"
+                }
+            ]
+        },
+        {
+            "name": "osm-gps-map",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/nzjrs/osm-gps-map/releases/download/1.1.0/osm-gps-map-1.1.0.tar.gz",
+                    "sha256": "8f2ff865ed9ed9786cc5373c37b341b876958416139d0065ebb785cf88d33586"
                 }
             ]
         },
@@ -151,8 +161,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/darktable-org/darktable/releases/download/release-2.4.4/darktable-2.4.4.tar.xz",
-                    "sha256": "964320b8c9ffef680fa0407a6ca16ed5136ad1f449572876e262764e78acb04d"
+                    "url": "https://github.com/darktable-org/darktable/releases/download/release-2.6.0/darktable-2.6.0.tar.xz",
+                    "sha256": "483d7d8e4ac532d89efc2f24e169f7a7da2d3ef0c599602b658d67a040670478"
                 }
             ]
         }
