@@ -1,7 +1,7 @@
 {
     "app-id": "org.darktable.Darktable",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.28",
+    "runtime-version": "3.30",
     "sdk": "org.gnome.Sdk",
     "command": "darktable",
     "rename-desktop-file": "darktable.desktop",
@@ -38,6 +38,7 @@
         "/lib/cmake",
         "/lib/pkgconfig",
         "/man",
+        "/share/gtk-doc/html/libosmgpsmap",
         "*.a",
         "*.la"
     ],
@@ -182,7 +183,8 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
-                "-DBINARY_PACKAGE_BUILD=1"
+                "-DBINARY_PACKAGE_BUILD=1",
+                "-DTESTBUILD_OPENCL_PROGRAMS=OFF"
             ],
             "builddir": true,
             "build-options": {
