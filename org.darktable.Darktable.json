@@ -110,7 +110,8 @@
                 "--disable-polkit",
                 "--disable-systemd-login",
                 "--disable-argyllcms-sensor",
-                "--disable-bash-completion"
+                "--disable-bash-completion",
+		"--with-tmpfilesdir=/app/lib"
             ],
             "sources": [
                 {
