@@ -111,7 +111,9 @@
                 "--disable-systemd-login",
                 "--disable-argyllcms-sensor",
                 "--disable-bash-completion",
-		"--with-tmpfilesdir=/app/lib"
+		"--with-tmpfilesdir=/app/lib",
+		"--with-systemdsystemunitdir=/app/lib",
+		"--with-udevrulesdir=/app/lib"
             ],
             "sources": [
                 {
