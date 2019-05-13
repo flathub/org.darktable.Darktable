@@ -70,7 +70,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://git.code.sf.net/p/lensfun/code",
+                    "url": "https://github.com/lensfun/lensfun.git",
                     "commit": "a78b3d29762ee644bbbbb6eae9daf0b98cf84472"
                 }
             ]
