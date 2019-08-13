@@ -15,7 +15,7 @@
         "--talk-name=org.freedesktop.secrets",
         /* Needed for dconf to work */
         "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
-	"--filesystem=xdg-run/gvfs",
+        "--filesystem=xdg-run/gvfs",
         "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
         /* Needed for gvfs to work */
         "--talk-name=org.gtk.vfs", "--talk-name=org.gtk.vfs.*",
@@ -112,9 +112,9 @@
                 "--disable-systemd-login",
                 "--disable-argyllcms-sensor",
                 "--disable-bash-completion",
-		"--with-tmpfilesdir=/app/lib",
-		"--with-systemdsystemunitdir=/app/lib",
-		"--with-udevrulesdir=/app/lib"
+                "--with-tmpfilesdir=/app/lib",
+                "--with-systemdsystemunitdir=/app/lib",
+                "--with-udevrulesdir=/app/lib"
             ],
             "sources": [
                 {
@@ -240,7 +240,7 @@
                 "--enable-shared"
             ],
             "cleanup": [
-		"/bin/GraphicsMagick*config"
+                "/bin/GraphicsMagick*config"
             ],
             "sources": [
                 {
@@ -267,6 +267,10 @@
                     "type": "archive",
                     "url": "https://github.com/darktable-org/darktable/releases/download/release-2.6.2/darktable-2.6.2.tar.xz",
                     "sha256": "9cb9efbb09a40375ff05cef89343235a621c58339539e44985470a029a7ffb45"
+                },
+                {
+                    "type": "patch",
+                    "path": "add-rating-and-releases.patch"
                 }
             ]
         }
