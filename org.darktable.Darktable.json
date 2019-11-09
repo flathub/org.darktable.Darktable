@@ -270,8 +270,10 @@
                     "sha256": "a518999c8458472edfc04577026ce5047d74553052af0f52d10ba8ce601b78f0"
                 },
                 {
-                    "type": "patch",
-                    "path": "add-rating-and-releases.patch"
+                    "type": "shell",
+                    "commands": [
+                        "sed -i '7i <releases><release version=\"2.6.3\" date=\"2019-10-20\"/></releases><content_rating type=\"oars-1.1\"/>' data/darktable.appdata.xml.in"
+                    ]
                 }
             ]
         }
