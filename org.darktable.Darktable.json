@@ -73,7 +73,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/lensfun/lensfun.git",
-                    "commit": "3724bdbbfc00e171d5cea2c66fb3668d0f3acebb"
+                    "commit": "b7c7e49a3601690f3225b99a0acbe7272fe68bfa",
+                    "tag": "v0.3.95"
                 }
             ]
         },
