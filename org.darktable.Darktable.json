@@ -13,6 +13,7 @@
         "--socket=x11",
         "--filesystem=host",
         "--talk-name=org.freedesktop.secrets",
+        "--metadata=X-DConf=migrate-path=/org/darktable/Darktable/",
         /* Needed for colord to work */
         "--system-talk-name=org.freedesktop.ColorManager",
         /* Needed for gvfs to work */
