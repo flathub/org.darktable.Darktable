@@ -252,8 +252,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://ftp.icm.edu.pl/pub/unix/graphics/GraphicsMagick/1.3/GraphicsMagick-1.3.29.tar.gz",
-                    "sha256": "de820cd10597205941a7e9d02c2e679231e92e8e769c204ef09034d2279ad453"
+                    "url": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.35/GraphicsMagick-1.3.35.tar.xz",
+                    "sha256": "188a8d6108fea87a0208723e8d206ec1d4d7299022be8ce5d0a9720509250250"
                 }
             ]
         },
@@ -272,12 +272,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-3.0.0.tar.xz",
-                    "sha256": "7195a5ff7ee95ab7c5a57e4e84f8c90cc4728b2c917359203c21293ab754c0db"
+                    "url": "https://github.com/darktable-org/darktable/releases/download/release-3.0.1/darktable-3.0.1.tar.xz",
+                    "sha256": "c54b3921da14a97c99ab2f79feca468cf2abca65adf907dba6216e47edab7cb7"
                 },
                 {
                     "type": "patch",
-                    "path": "add-rating-and-releases.patch"
+                    "path": "darktable-appdata.patch"
                 }
             ]
         }
