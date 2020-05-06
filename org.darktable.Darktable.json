@@ -69,6 +69,11 @@
                     }
                 }
             },
+            "post-install": [
+                /* Remove all the lens definition files and the time stamp file */
+                "rm -rf /app/share/lensfun/version_2/*.xml",
+                "rm -rf /app/share/lensfun/version_2/timestamp.txt"
+            ],
             "sources": [
                 {
                     "type": "git",
@@ -77,6 +82,23 @@
                     "tag": "v0.3.95"
                 }
             ]
+        },
+        {
+            "name": "lensfun-db",
+            "buildsystem": "simple",
+            "build-commands": [
+                "date +%s > timestamp.txt"
+            ],
+            "post-install": [
+                /* Copy over the latest lens definition files */
+                "cp -r /run/build/lensfun-db//data/db/*.xml /app/share/lensfun/version_2/",
+		"cp /run/build/lensfun-db//timestamp.txt /app/share/lensfun/version_2/"
+            ],
+            "sources": [{
+                "type": "git",
+                "url": "https://github.com/lensfun/lensfun.git",
+                "commit": "a77fa3d7dbaeb82dd44bb863416c978b061b81a1"
+            }]
         },
         {
             "name": "exiv2",
