@@ -269,11 +269,18 @@
             "build-options": {
                 "cflags": "-O2 -std=c99"
             },
+            "post-install": [
+              "cd /app/share/lensfun && tar jxvf /run/build/darktable/lensfun-db.tar.bz2"
+            ],
             "sources": [
                 {
                     "type": "archive",
                     "url": "https://github.com/darktable-org/darktable/releases/download/release-3.0.2/darktable-3.0.2.tar.xz",
                     "sha256": "6abaf661fe9414e92bdb33b58b98ef024ccf6132b7876abaf0751ec2109f36fb"
+                },
+                {
+                    "type": "file",
+                    "path": "lensfun/lensfun-db.tar.bz2"
                 },
                 {
                     "type": "patch",
