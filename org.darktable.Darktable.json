@@ -161,19 +161,7 @@
                 }
             ]
         },
-        {
-            "name": "libusb",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/libusb/libusb/releases/download/v1.0.23/libusb-1.0.23.tar.bz2",
-                    "sha256": "db11c06e958a82dac52cf3c65cb4dd2c3f339c8a988665110e0d24d19312ad8d"
-                }
-            ],
-            "config-opts": [
-                "--disable-udev"
-            ]
-        },
+        "shared-modules/libusb/libusb.json",
         {
             "name": "libgphoto2",
             "sources": [
@@ -263,6 +251,23 @@
             ]
         },
         {
+            "name": "libavif",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DAVIF_CODEC_DAV1D=YES"
+            ],
+            "cleanup": [
+                "/lib/*.so"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/AOMediaCodec/libavif/archive/v0.8.1.tar.gz",
+                    "sha256": "27d39b69151fd090f26e10779ec79876af44876d180edda77beafa8e7e7aca26"
+                }
+            ]
+        },
+        {
             "name": "graphicsmagick",
             "builddir": true,
             "config-opts": [
@@ -294,8 +299,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/darktable-org/darktable/releases/download/release-3.0.2/darktable-3.0.2.tar.xz",
-                    "sha256": "6abaf661fe9414e92bdb33b58b98ef024ccf6132b7876abaf0751ec2109f36fb"
+                    "url": "https://github.com/darktable-org/darktable/releases/download/release-3.2.1/darktable-3.2.1.tar.xz",
+                    "sha256": "6e3683ea88dc0a0271be7eca4fd594b9e46b1b7194847825a8d0a0c12bdeb90c"
                 },
                 {
                     "type": "patch",
