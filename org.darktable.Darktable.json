@@ -104,13 +104,24 @@
             "name": "exiv2",
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release"
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DEXIV2_BUILD_DOC:BOOL=OFF",
+                "-DEXIV2_BUILD_EXIV2_COMMAND=OFF",
+                "-DEXIV2_BUILD_SAMPLES=OFF"
             ],
             "sources": [
                 {
                     "type": "archive",
                     "url": "http://www.exiv2.org/builds/exiv2-0.27.3-Source.tar.gz",
                     "sha256": "a79f5613812aa21755d578a297874fb59a85101e793edc64ec2c6bd994e3e778"
+                },
+                {
+                    "type": "patch",
+                    "path": "exiv2-arch-flags.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "exiv2-arch-flags-2.patch"
                 }
             ]
         },
