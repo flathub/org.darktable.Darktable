@@ -262,23 +262,6 @@
             ]
         },
         {
-            "name": "libavif",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DAVIF_CODEC_DAV1D=YES"
-            ],
-            "cleanup": [
-                "/lib/*.so"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/AOMediaCodec/libavif/archive/v0.8.1.tar.gz",
-                    "sha256": "27d39b69151fd090f26e10779ec79876af44876d180edda77beafa8e7e7aca26"
-                }
-            ]
-        },
-        {
             "name": "graphicsmagick",
             "builddir": true,
             "config-opts": [
@@ -312,6 +295,47 @@
                     "type": "archive",
                     "url": "https://gmic.eu/files/source/gmic_2.9.1.tar.gz",
                     "sha256": "50c9dd418b8d0e80c703c2e2b179b6049343567483d37d9ff6c642c6ede95d8d"
+                }
+            ]
+        },
+        {
+            "name": "libavif",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DAVIF_CODEC_AOM=ON",
+                "-DAOM_INCLUDE_DIR=/app/include",
+                "-DAOM_LIBRARY=/app/lib/libaom.a"
+            ],
+            "cleanup": [
+                "/lib/*.so"
+            ],
+            "modules": [
+                {
+                    "name": "aom2",
+                    "buildsystem": "cmake-ninja",
+                    "builddir": true,
+                    "build-options": {
+                        "cflags": "-fPIC",
+                        "cxxflags": "-fPIC"
+                    },
+                    "config-opts": [
+                        "-DBUILD_SHARED_LIBS=NO"
+                    ],
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://aomedia.googlesource.com/aom",
+                            "branch": "v2.0.0",
+                            "commit": "bb35ba9148543f22ba7d8642e4fbd29ae301f5dc"
+                        }
+                    ]
+                }
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/AOMediaCodec/libavif/archive/v0.8.1.tar.gz",
+                    "sha256": "27d39b69151fd090f26e10779ec79876af44876d180edda77beafa8e7e7aca26"
                 }
             ]
         },
