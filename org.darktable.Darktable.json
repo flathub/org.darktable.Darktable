@@ -178,8 +178,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/gphoto/libgphoto2/releases/download/v2.5.25/libgphoto2-2.5.25.tar.bz2",
-                    "sha256": "7c0e98f438c2b128186afe16ce7833a12fa36f87d01467e837b9d27e7a167f3a"
+                    "url": "https://github.com/gphoto/libgphoto2/releases/download/v2.5.26/libgphoto2-2.5.26.tar.bz2",
+                    "sha256": "7740fea3cbb78489071cdfec06c07fab528e69e27ac82734eae6a73eaeeabcd4"
                 }
             ]
         },
@@ -334,8 +334,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AOMediaCodec/libavif/archive/v0.8.1.tar.gz",
-                    "sha256": "27d39b69151fd090f26e10779ec79876af44876d180edda77beafa8e7e7aca26"
+                    "url": "https://github.com/AOMediaCodec/libavif/archive/v0.8.2.tar.gz",
+                    "sha256": "1b79ec439d446dfd659098d36401b4d2df77dd19d53d7d944ade7164b3ef28a2"
                 }
             ]
         },
@@ -354,8 +354,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/darktable-org/darktable/releases/download/release-3.2.1/darktable-3.2.1.tar.xz",
-                    "sha256": "6e3683ea88dc0a0271be7eca4fd594b9e46b1b7194847825a8d0a0c12bdeb90c"
+                    "url": "https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-3.4.0.tar.xz",
+                    "sha256": "6dd3de1f5ea9f94af92838c0be5ff30fdaa599aa1d737dcb562f9e0b2b2dbdda"
                 },
                 {
                     "type": "patch",
