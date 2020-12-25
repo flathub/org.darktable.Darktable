@@ -359,6 +359,10 @@
                 },
                 {
                     "type": "patch",
+                    "path": "darktable-7428.patch"
+                },
+                {
+                    "type": "patch",
                     "path": "darktable-appdata.patch"
                 }
             ]
