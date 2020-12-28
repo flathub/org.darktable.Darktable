@@ -340,6 +340,27 @@
             ]
         },
         {
+            "name": "git",
+            "make-args": [
+                "NO_TCLTK=YesPlease",
+                "INSTALL_SYMLINKS=1"
+            ],
+            "make-install-args": [
+                "NO_TCLTK=YesPlease",
+                "INSTALL_SYMLINKS=1"
+            ],
+            "post-install": [
+                "find . -type f -name perllocal.pod -delete"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.kernel.org/pub/software/scm/git/git-2.29.2.tar.xz",
+                    "sha256": "f2fc436ebe657821a1360bcd1e5f4896049610082419143d60f6fa13c2f607c1"
+                }
+            ]
+        },
+        {
             "name": "darktable",
             "buildsystem": "cmake-ninja",
             "config-opts": [
