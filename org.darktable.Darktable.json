@@ -96,7 +96,7 @@
                     /* used only for database*/
                     "dest": "lensfun-git",
                     "url": "https://github.com/lensfun/lensfun.git",
-                    "commit": "a77fa3d7dbaeb82dd44bb863416c978b061b81a1"
+                    "commit": "4672d765a17bfef7bc994ca7008cb717c61045d5"
                 }
             ]
         },
