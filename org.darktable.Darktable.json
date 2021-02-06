@@ -36,10 +36,13 @@
         "/bin/metacopy",
         "/bin/pathtest",
         "/bin/gphoto2*",
+        "/doc",
         "/lib/cmake",
         "/lib/pkgconfig",
         "/man",
+        "/share/doc",
         "/share/gtk-doc/html/libosmgpsmap",
+        "/share/man",
         "*.a",
         "*.la"
     ],
@@ -341,6 +344,9 @@
         },
         {
             "name": "git",
+            "cleanup": [
+                "/share/gitweb"
+            ],
             "make-args": [
                 "NO_TCLTK=YesPlease",
                 "INSTALL_SYMLINKS=1"
@@ -375,12 +381,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-3.4.0.tar.xz",
-                    "sha256": "6dd3de1f5ea9f94af92838c0be5ff30fdaa599aa1d737dcb562f9e0b2b2dbdda"
-                },
-                {
-                    "type": "patch",
-                    "path": "darktable-7428.patch"
+                    "url": "https://github.com/darktable-org/darktable/releases/download/release-3.4.1/darktable-3.4.1.tar.xz",
+                    "sha256": "7fc3f851da9bcd7c5053ecd09f21aa3eb6103be98a6c58f52010b6f22174941e"
                 },
                 {
                     "type": "patch",
