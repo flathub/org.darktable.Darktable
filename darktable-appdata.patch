@@ -1,17 +1,12 @@
-diff --git a/data/darktable.appdata.xml.in b/data/darktable.appdata.xml.in
-index 56e08656d..16f238732 100644
---- a/data/darktable.appdata.xml.in
-+++ b/data/darktable.appdata.xml.in
-@@ -49,11 +49,12 @@
+diff -u -r darktable-3.6.1-orig/data/darktable.appdata.xml.in darktable-3.6.1/data/darktable.appdata.xml.in
+--- darktable-3.6.1-orig/data/darktable.appdata.xml.in	2021-09-19 15:22:47.328747817 +0200
++++ darktable-3.6.1/data/darktable.appdata.xml.in	2021-09-19 15:24:14.769958923 +0200
+@@ -49,6 +49,8 @@
    </screenshots>
    <content_rating type="oars-1.1" />
    <releases>
++    <release date="2021-09-15" version="3.6.1"/>
 +    <release date="2021-07-03" version="3.6.0"/>
      <release date="2021-02-06" version="3.4.1"/>
      <release date="2020-12-24" version="3.4.0"/>
      <release date="2020-08-10" version="3.2.1"/>
-     <release date="2020-04-18" version="3.0.2"/>
-     <release date="2020-03-09" version="3.0.1"/>
-     <release date="2019-12-24" version="3.0.0"/>
-     <release date="2019-10-20" version="2.6.3"/>
-     <release date="2019-03-21" version="2.6.2"/>
