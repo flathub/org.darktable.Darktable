@@ -423,6 +423,10 @@
                 {
                     "type": "patch",
                     "path": "darktable-appdata.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "darktable-aarch64.patch"
                 }
             ]
         }
