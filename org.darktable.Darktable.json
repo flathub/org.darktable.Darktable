@@ -10,7 +10,8 @@
     "finish-args": [
         "--share=ipc",
         "--share=network",
-        "--socket=x11",
+        "--socket=wayland",
+        "--socket=fallback-x11",
         "--filesystem=host",
         "--talk-name=org.freedesktop.secrets",
         "--metadata=X-DConf=migrate-path=/org/darktable/Darktable/",
