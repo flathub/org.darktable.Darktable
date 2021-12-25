@@ -1,7 +1,7 @@
 {
     "app-id": "org.darktable.Darktable",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "40",
+    "runtime-version": "41",
     "sdk": "org.gnome.Sdk",
     "command": "darktable",
     "rename-desktop-file": "darktable.desktop",
@@ -17,18 +17,12 @@
         /* Needed for colord to work */
         "--system-talk-name=org.freedesktop.ColorManager",
         /* Needed for gvfs to work */
-        "--talk-name=org.gtk.vfs",
         "--talk-name=org.gtk.vfs.*",
+        "--filesystem=xdg-run/gvfs",
+        "--filesystem=xdg-run/gvfsd",
         /* For USB, until there is a better way in flatpak */
         "--device=all"
     ],
-    "build-options": {
-        "cflags": "-O2",
-        "cxxflags": "-O2 -std=c++11",
-        "env": {
-            "V": "1"
-        }
-    },
     "cleanup": [
         "/include",
         "/bin/exiv2*",
@@ -47,7 +41,7 @@
         "*.la"
     ],
     "modules": [
-        "shared-modules/lua5.3/lua-5.3.5.json",
+        "lua5.4/lua-5.4.json",
         {
             "name": "lensfun",
             "buildsystem": "cmake-ninja",
@@ -68,7 +62,7 @@
                 }
             },
             "post-install": [
-                "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml",
+                "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml --ignore-installed",
                 "python3 lensfun_convert_db.py $PWD lensfun-git/data/db",
                 "rm -rf /app/share/lensfun/version_1/*",
                 "tar xvf db/version_1.tar -C /app/share/lensfun/version_1"
@@ -110,8 +104,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://www.exiv2.org/builds/exiv2-0.27.4-Source.tar.gz",
-                    "sha256": "84366dba7c162af9a7603bcd6c16f40fe0e9af294ba2fd2f66ffffb9fbec904e"
+                    "url": "http://www.exiv2.org/builds/exiv2-0.27.5-Source.tar.gz",
+                    "sha256": "35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2"
                 }
             ]
         },
@@ -334,6 +328,60 @@
             ]
         },
         {
+            "name": "libde265",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/strukturag/libde265/archive/v1.0.8.tar.gz",
+                    "sha256": "c5ab61185f283f46388c700c43dc08606b0e260cd53f06b967ec0ad7a809ff11"
+                }
+            ]
+        },
+        {
+            "name": "libheif",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DWITH_EXAMPLES=0",
+                "-DWITH_X265=0",
+                "-DWITH_RAV1E=0",
+                "-DWITH_AOM=0",
+                "-DWITH_DAV1D=0"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/strukturag/libheif/archive/v1.12.0.tar.gz",
+                    "sha256": "086145b0d990182a033b0011caadb1b642da84f39ab83aa66d005610650b3c65"
+                }
+            ]
+        },
+        {
+            "name": "jasper",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DJAS_ENABLE_SHARED=ON",
+                "-DJAS_ENABLE_LIBJPEG=ON",
+                "-DJAS_ENABLE_OPENGL=OFF",
+                "-DJAS_LOCAL=OFF",
+                "-DJAS_ENABLE_DOC=OFF",
+                "-DJAS_ENABLE_PROGRAMS=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/jasper-software/jasper/archive/version-2.0.33.tar.gz",
+                    "sha256": "38b8f74565ee9e7fec44657e69adb5c9b2a966ca5947ced5717cde18a7d2eca6"
+                }
+            ]
+        },
+        {
             "name": "git",
             "cleanup": [
                 "/share/gitweb"
@@ -366,18 +414,19 @@
                 "-DTESTBUILD_OPENCL_PROGRAMS=OFF"
             ],
             "builddir": true,
-            "build-options": {
-                "cflags": "-O2 -std=c99"
-            },
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/darktable-org/darktable/releases/download/release-3.6.1/darktable-3.6.1.tar.xz",
-                    "sha256": "a2bfc7c103b824945457a9bfed9e52f007fa1d030f9dbcb3ff0327851be42d14"
+                    "url": "https://github.com/darktable-org/darktable/releases/download/release-3.8.0/darktable-3.8.0.tar.xz",
+                    "sha256": "2e65c7c78d074ad218e3ef7a8c3051a8ea78f4a0406386667859645e5e4bf705"
                 },
                 {
                     "type": "patch",
                     "path": "darktable-appdata.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "darktable-aarch64.patch"
                 }
             ]
         }

@@ -1,0 +1,21 @@
+commit 8c89be79f64883e4551db5aa51726b21a62a07e3
+Author: Hubert Figuière <hub@figuiere.net>
+Date:   Fri Dec 24 15:42:17 2021 -0500
+
+    __DT_CLONE_TARGETS__ was undefined on aarch64
+    
+    - it's probably broken on armv7 too and other non intel arch
+
+diff --git a/src/common/darktable.h b/src/common/darktable.h
+index b841bf2bc..aad6169f8 100644
+--- a/src/common/darktable.h
++++ b/src/common/darktable.h
+@@ -133,6 +133,8 @@ typedef unsigned int u_int;
+ # elif defined(__PPC64__)
+ /* __PPC64__ is the only macro tested for in is_supported_platform.h, other macros would fail there anyway. */
+ #define __DT_CLONE_TARGETS__ __attribute__((target_clones("default","cpu=power9")))
++# else
++#define __DT_CLONE_TARGETS__
+ # endif
+ #else
+ #define __DT_CLONE_TARGETS__
