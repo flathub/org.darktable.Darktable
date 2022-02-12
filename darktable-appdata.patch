@@ -1,10 +1,11 @@
 diff -u -r darktable-3.6.1-orig/data/darktable.appdata.xml.in darktable-3.6.1/data/darktable.appdata.xml.in
 --- darktable-3.6.1-orig/data/darktable.appdata.xml.in	2021-09-19 15:22:47.328747817 +0200
 +++ darktable-3.6.1/data/darktable.appdata.xml.in	2021-09-19 15:24:14.769958923 +0200
-@@ -49,7 +49,9 @@
+@@ -49,7 +49,10 @@
    </screenshots>
    <content_rating type="oars-1.1" />
    <releases>
++    <release date="2022-02-11" version="3.8.1"/>
 +    <release date="2021-12-24" version="3.8.0"/>
 +    <release date="2021-09-15" version="3.6.1"/>
      <release date="2021-07-03" version="3.6.0"/>
