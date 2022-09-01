@@ -142,6 +142,17 @@
             ]
         },
         {
+            "name": "portmidi",
+            "buildsystem": "cmake",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/PortMidi/portmidi/archive/refs/tags/v2.0.3.tar.gz",
+                    "sha256": "934f80e1b09762664d995e7ab5a9932033bc70639e8ceabead817183a54c60d0"
+                }
+            ]
+        },
+        {
             "name": "colord",
             "buildsystem": "meson",
             "config-opts": [
