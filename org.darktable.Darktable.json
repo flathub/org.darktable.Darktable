@@ -427,8 +427,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0.tar.xz",
-                    "sha256": "1416f8f59717e65a6220541aaa12eacca93888ce5176f2c9ab6c17b9cc53cc2d"
+                    "url": "https://github.com/darktable-org/darktable/releases/download/release-4.0.1/darktable-4.0.1.tar.xz",
+                    "sha256": "5fef81e0c0079977a3cdc3627eed777280c2346d023c5d176c1f4a62cbe51d68"
                 },
                 {
                     "type": "patch",
