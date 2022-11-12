@@ -18,6 +18,8 @@
         "--system-talk-name=org.freedesktop.ColorManager",
         /* Needed for gvfs to work */
         "--talk-name=org.gtk.vfs.*",
+        /* Needed so lua can call commands (e.g. exiftool) on the host system */
+        "--talk-name=org.freedesktop.Flatpak",
         "--filesystem=xdg-run/gvfs",
         "--filesystem=xdg-run/gvfsd",
         /* For USB, until there is a better way in flatpak */
