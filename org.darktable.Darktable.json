@@ -33,6 +33,7 @@
         "/doc",
         "/lib/cmake",
         "/lib/pkgconfig",
+        "/lib/girepository-*",
         "/man",
         "/share/doc",
         "/share/gtk-doc/html/libosmgpsmap",
@@ -61,6 +62,9 @@
                     }
                 }
             },
+            "cleanup": [
+                "/lib/python3.*"
+            ],
             "post-install": [
                 "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml --ignore-installed",
                 "python3 lensfun_convert_db.py $PWD lensfun-git/data/db",
