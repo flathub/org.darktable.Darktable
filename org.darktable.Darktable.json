@@ -1,7 +1,7 @@
 {
     "app-id": "org.darktable.Darktable",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
     "command": "darktable",
     "rename-desktop-file": "darktable.desktop",
@@ -75,8 +75,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/39/2b/0a66d5436f237aff76b91e68b4d8c041d145ad0a2cdeefe2c42f76ba2857/lxml-4.5.0.tar.gz",
-                    "sha256": "8620ce80f50d023d414183bf90cc2576c2837b88e00bea3f33ad2630133bbb60"
+                    "url": "https://files.pythonhosted.org/packages/06/5a/e11cad7b79f2cf3dd2ff8f81fa8ca667e7591d3d8451768589996b65dec1/lxml-4.9.2.tar.gz",
+                    "sha256": "2455cfaeb7ac70338b3257f41e21f0724f4b5b0c0e7702da67ee6c3640835b67"
                 },
                 {
                     "type": "file",
@@ -216,7 +216,6 @@
             "name": "Imath",
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DBUILD_LIB_STATIC=OFF",
                 "-DBUILD_TESTING=OFF"
             ],
             "sources": [
@@ -267,8 +266,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.37/GraphicsMagick-1.3.37.tar.xz",
-                    "sha256": "90dc22f1a7bd240e4c9065a940962bf13da43c99bcc36cb111cc3c1a0d7477d4"
+                    "url": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.38/GraphicsMagick-1.3.38.tar.xz",
+                    "sha256": "d60cd9db59351d2b9cb19beb443170acaa28f073d13d258f67b3627635e32675"
                 }
             ]
         },
@@ -332,8 +331,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AOMediaCodec/libavif/archive/refs/tags/v0.8.3.tar.gz",
-                    "sha256": "0527720a493a08cfcd56cae2fe10e8c674112ebf1a6e1c30d38fca5bb2a504b2"
+                    "url": "https://github.com/AOMediaCodec/libavif/archive/refs/tags/v0.9.1.tar.gz",
+                    "sha256": "8526f3fff34a05a51d7c703cdcf1d0d38c939b5b6dd4bb7d3a3405ddad88186c"
                 }
             ]
         },
@@ -379,7 +378,6 @@
                 "-DJAS_ENABLE_SHARED=ON",
                 "-DJAS_ENABLE_LIBJPEG=ON",
                 "-DJAS_ENABLE_OPENGL=OFF",
-                "-DJAS_LOCAL=OFF",
                 "-DJAS_ENABLE_DOC=OFF",
                 "-DJAS_ENABLE_PROGRAMS=OFF"
             ],
@@ -427,8 +425,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/darktable-org/darktable/releases/download/release-4.0.1/darktable-4.0.1.tar.xz",
-                    "sha256": "5fef81e0c0079977a3cdc3627eed777280c2346d023c5d176c1f4a62cbe51d68"
+                    "url": "https://github.com/darktable-org/darktable/releases/download/release-4.2.0/darktable-4.2.0.tar.xz",
+                    "sha256": "18b0917fdfe9b09f66c279a681cc3bd52894a566852bbf04b2e179ecfdb11af9"
                 },
                 {
                     "type": "patch",
