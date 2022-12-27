@@ -1,7 +1,7 @@
 {
     "app-id": "org.darktable.Darktable",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
     "command": "darktable",
     "rename-desktop-file": "darktable.desktop",
@@ -33,6 +33,7 @@
         "/doc",
         "/lib/cmake",
         "/lib/pkgconfig",
+        "/lib/girepository-*",
         "/man",
         "/share/doc",
         "/share/gtk-doc/html/libosmgpsmap",
@@ -61,6 +62,9 @@
                     }
                 }
             },
+            "cleanup": [
+                "/lib/python3.*"
+            ],
             "post-install": [
                 "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml --ignore-installed",
                 "python3 lensfun_convert_db.py $PWD lensfun-git/data/db",
@@ -75,8 +79,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/39/2b/0a66d5436f237aff76b91e68b4d8c041d145ad0a2cdeefe2c42f76ba2857/lxml-4.5.0.tar.gz",
-                    "sha256": "8620ce80f50d023d414183bf90cc2576c2837b88e00bea3f33ad2630133bbb60"
+                    "url": "https://files.pythonhosted.org/packages/06/5a/e11cad7b79f2cf3dd2ff8f81fa8ca667e7591d3d8451768589996b65dec1/lxml-4.9.2.tar.gz",
+                    "sha256": "2455cfaeb7ac70338b3257f41e21f0724f4b5b0c0e7702da67ee6c3640835b67"
                 },
                 {
                     "type": "file",
@@ -87,7 +91,7 @@
                     /* used only for database*/
                     "dest": "lensfun-git",
                     "url": "https://github.com/lensfun/lensfun.git",
-                    "commit": "27239d18b6e33275f8ed779cddb7862f5b23130d"
+                    "commit": "b846bf8f866bac8cb425a33e8f8c2dedaec9f8eb"
                 }
             ]
         },
@@ -197,8 +201,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/gphoto/libgphoto2/releases/download/v2.5.29/libgphoto2-2.5.29.tar.bz2",
-                    "sha256": "dbe3cefad8c634fc134d93467a33e242cb1030f0b9829deb9f1703f368ac027e"
+                    "url": "https://github.com/gphoto/libgphoto2/releases/download/v2.5.30/libgphoto2-2.5.30.tar.bz2",
+                    "sha256": "ee61a1dac6ad5cf711d114e06b90a6d431961a6e7ec59f4b757a7cd77b1c0fb4"
                 }
             ]
         },
@@ -216,7 +220,6 @@
             "name": "Imath",
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DBUILD_LIB_STATIC=OFF",
                 "-DBUILD_TESTING=OFF"
             ],
             "sources": [
@@ -267,8 +270,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.37/GraphicsMagick-1.3.37.tar.xz",
-                    "sha256": "90dc22f1a7bd240e4c9065a940962bf13da43c99bcc36cb111cc3c1a0d7477d4"
+                    "url": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.38/GraphicsMagick-1.3.38.tar.xz",
+                    "sha256": "d60cd9db59351d2b9cb19beb443170acaa28f073d13d258f67b3627635e32675"
                 }
             ]
         },
@@ -332,8 +335,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AOMediaCodec/libavif/archive/refs/tags/v0.8.3.tar.gz",
-                    "sha256": "0527720a493a08cfcd56cae2fe10e8c674112ebf1a6e1c30d38fca5bb2a504b2"
+                    "url": "https://github.com/AOMediaCodec/libavif/archive/refs/tags/v0.9.1.tar.gz",
+                    "sha256": "8526f3fff34a05a51d7c703cdcf1d0d38c939b5b6dd4bb7d3a3405ddad88186c"
                 }
             ]
         },
@@ -379,7 +382,6 @@
                 "-DJAS_ENABLE_SHARED=ON",
                 "-DJAS_ENABLE_LIBJPEG=ON",
                 "-DJAS_ENABLE_OPENGL=OFF",
-                "-DJAS_LOCAL=OFF",
                 "-DJAS_ENABLE_DOC=OFF",
                 "-DJAS_ENABLE_PROGRAMS=OFF"
             ],
@@ -388,6 +390,56 @@
                     "type": "archive",
                     "url": "https://github.com/jasper-software/jasper/archive/version-2.0.33.tar.gz",
                     "sha256": "38b8f74565ee9e7fec44657e69adb5c9b2a966ca5947ced5717cde18a7d2eca6"
+                }
+            ]
+        },
+        {
+            "name": "libjxl",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DJPEGXL_ENABLE_BENCHMARK=OFF",
+                "-DJPEGXL_ENABLE_DOXYGEN=OFF",
+                "-DJPEGXL_ENABLE_EXAMPLES=OFF",
+                "-DJPEGXL_ENABLE_JNI=OFF",
+                "-DJPEGXL_ENABLE_MANPAGES=OFF",
+                "-DJPEGXL_ENABLE_PLUGINS=OFF",
+                "-DJPEGXL_ENABLE_SJPEG=OFF",
+                "-DJPEGXL_ENABLE_SKCMS=OFF",
+                "-DJPEGXL_ENABLE_TCMALLOC=OFF",
+                "-DJPEGXL_ENABLE_TOOLS=OFF",
+                "-DJPEGXL_FORCE_SYSTEM_BROTLI=ON",
+                "-DJPEGXL_FORCE_SYSTEM_HWY=ON",
+                "-DJPEGXL_FORCE_SYSTEM_LCMS2=ON",
+                "-DJPEGXL_WARNINGS_AS_ERRORS=OFF"
+            ],
+            "modules": [
+                {
+                    "name": "libhwy",
+                    "config-opts": [
+                        "-DBUILD_TESTING=OFF",
+                        "-DBUILD_SHARED_LIBS=OFF",
+                        "-DHWY_ENABLE_EXAMPLES=OFF",
+                        "-DHWY_ENABLE_TESTS=OFF",
+                        "-DHWY_FORCE_STATIC_LIBS=ON"
+                    ],
+                    "buildsystem": "cmake-ninja",
+                    "builddir": true,
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/google/highway/archive/refs/tags/1.0.2.tar.gz",
+                            "sha256": "e8ef71236ac0d97f12d553ec1ffc5b6375d57b5f0b860c7447dd69b6ed1072db"
+                        }
+                    ]
+                }
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/libjxl/libjxl/archive/refs/tags/v0.7.0.tar.gz",
+                    "sha256": "3114bba1fabb36f6f4adc2632717209aa6f84077bc4e93b420e0d63fa0455c5e"
                 }
             ]
         },
@@ -502,8 +554,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/darktable-org/darktable/releases/download/release-4.0.1/darktable-4.0.1.tar.xz",
-                    "sha256": "5fef81e0c0079977a3cdc3627eed777280c2346d023c5d176c1f4a62cbe51d68"
+                    "url": "https://github.com/darktable-org/darktable/releases/download/release-4.2.0/darktable-4.2.0.tar.xz",
+                    "sha256": "18b0917fdfe9b09f66c279a681cc3bd52894a566852bbf04b2e179ecfdb11af9"
                 },
                 {
                     "type": "patch",
