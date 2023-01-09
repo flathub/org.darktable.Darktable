@@ -76,12 +76,22 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/lensfun/lensfun/archive/refs/tags/v0.3.3.tar.gz",
-                    "sha256": "57ba5a0377f24948972339e18be946af12eda22b7c707eb0ddd26586370f6765"
+                    "sha256": "57ba5a0377f24948972339e18be946af12eda22b7c707eb0ddd26586370f6765",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/lensfun/lensfun/releases/latest",
+                        "version-query": ".tag_name | sub(\"^v\"; \"\")",
+                        "url-query": "\"https://github.com/lensfun/lensfun/archive/refs/tags/v\" + $version + \".tar.gz\""
+                    }
                 },
                 {
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/06/5a/e11cad7b79f2cf3dd2ff8f81fa8ca667e7591d3d8451768589996b65dec1/lxml-4.9.2.tar.gz",
-                    "sha256": "2455cfaeb7ac70338b3257f41e21f0724f4b5b0c0e7702da67ee6c3640835b67"
+                    "sha256": "2455cfaeb7ac70338b3257f41e21f0724f4b5b0c0e7702da67ee6c3640835b67",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "lxml"
+                    }
                 },
                 {
                     "type": "file",
@@ -110,7 +120,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/Exiv2/exiv2/releases/download/v0.27.5/exiv2-0.27.5-Source.tar.gz",
-                    "sha256": "35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2"
+                    "sha256": "35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/Exiv2/exiv2/releases/latest",
+                        "version-query": ".tag_name | sub(\"^v\"; \"\")",
+                        "url-query": ".assets[] | select(.name==\"exiv2-\" + $version + \"-Source.tar.gz\") | .browser_download_url"
+                    }
                 }
             ]
         },
@@ -126,7 +142,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/zeux/pugixml/releases/download/v1.11.4/pugixml-1.11.4.tar.gz",
-                    "sha256": "8ddf57b65fb860416979a3f0640c2ad45ddddbbafa82508ef0a0af3ce7061716"
+                    "sha256": "8ddf57b65fb860416979a3f0640c2ad45ddddbbafa82508ef0a0af3ce7061716",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/zeux/pugixml/releases/latest",
+                        "version-query": ".tag_name | sub(\"^v\"; \"\")",
+                        "url-query": ".assets[] | select(.name==\"pugixml-\" + $version + \".tar.gz\") | .browser_download_url"
+                    }
                 }
             ]
         },
@@ -142,7 +164,12 @@
                 {
                     "type": "archive",
                     "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.3.9.tar.xz",
-                    "sha256": "1f51ebe8c91140cffbd1c4d58602c96b884170cae4c74f6f7e302a91d5b7c972"
+                    "sha256": "1f51ebe8c91140cffbd1c4d58602c96b884170cae4c74f6f7e302a91d5b7c972",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 5505,
+                        "url-template": "https://github.com/hughsie/libgusb/releases/download/$version/libgusb-$version.tar.xz"
+                    }
                 }
             ]
         },
@@ -153,7 +180,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/PortMidi/portmidi/archive/refs/tags/v2.0.3.tar.gz",
-                    "sha256": "934f80e1b09762664d995e7ab5a9932033bc70639e8ceabead817183a54c60d0"
+                    "sha256": "934f80e1b09762664d995e7ab5a9932033bc70639e8ceabead817183a54c60d0",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/PortMidi/portmidi/releases/latest",
+                        "version-query": ".tag_name | sub(\"^v\"; \"\")",
+                        "url-query": "\"https://github.com/PortMidi/portmidi/archive/refs/tags/v\" + $version + \".tar.gz\""
+                    }
                 }
             ]
         },
@@ -178,7 +211,12 @@
                 {
                     "type": "archive",
                     "url": "https://www.freedesktop.org/software/colord/releases/colord-1.4.5.tar.xz",
-                    "sha256": "b774ea443d239f4a2ee1853bd678426e669ddeda413dcb71cea1638c4d6c5e17"
+                    "sha256": "b774ea443d239f4a2ee1853bd678426e669ddeda413dcb71cea1638c4d6c5e17",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 10190,
+                        "url-template": "https://www.freedesktop.org/software/colord/releases/colord-$version.tar.xz"
+                    }
                 }
             ]
         },
@@ -193,7 +231,12 @@
                 {
                     "type": "archive",
                     "url": "https://www.freedesktop.org/software/colord/releases/colord-gtk-0.2.0.tar.xz",
-                    "sha256": "2a4cfae08bc69f000f40374934cd26f4ae86d286ce7de89f1622abc59644c717"
+                    "sha256": "2a4cfae08bc69f000f40374934cd26f4ae86d286ce7de89f1622abc59644c717",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 331,
+                        "url-template": "https://www.freedesktop.org/software/colord/releases/colord-gtk-$version.tar.xz"
+                    }
                 }
             ]
         },
@@ -203,7 +246,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/gphoto/libgphoto2/releases/download/v2.5.30/libgphoto2-2.5.30.tar.bz2",
-                    "sha256": "ee61a1dac6ad5cf711d114e06b90a6d431961a6e7ec59f4b757a7cd77b1c0fb4"
+                    "sha256": "ee61a1dac6ad5cf711d114e06b90a6d431961a6e7ec59f4b757a7cd77b1c0fb4",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/gphoto/libgphoto2/releases/latest",
+                        "version-query": ".tag_name | sub(\"^v\"; \"\")",
+                        "url-query": ".assets[] | select(.name==\"libgphoto2-\" + $version + \".tar.bz2\") | .browser_download_url"
+                    }
                 }
             ]
         },
@@ -213,7 +262,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/nzjrs/osm-gps-map/releases/download/1.2.0/osm-gps-map-1.2.0.tar.gz",
-                    "sha256": "ddec11449f37b5dffb4bca134d024623897c6140af1f9981a8acc512dbf6a7a5"
+                    "sha256": "ddec11449f37b5dffb4bca134d024623897c6140af1f9981a8acc512dbf6a7a5",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/nzjrs/osm-gps-map/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | select(.name==\"osm-gps-map-\" + $version + \".tar.gz\") | .browser_download_url"
+                    }
                 }
             ]
         },
@@ -227,7 +282,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.3.tar.gz",
-                    "sha256": "0bf7ec51162c4d17a4c5b850fb3f6f7a195cff9fa71f4da7735f74d7b5124320"
+                    "sha256": "0bf7ec51162c4d17a4c5b850fb3f6f7a195cff9fa71f4da7735f74d7b5124320",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/AcademySoftwareFoundation/Imath/releases/latest",
+                        "version-query": ".tag_name | sub(\"^v\"; \"\")",
+                        "url-query": "\"https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v\" + $version + \".tar.gz\""
+                    }
                 }
             ],
             "cleanup": [
@@ -248,7 +309,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.1.3.tar.gz",
-                    "sha256": "6f70a624d1321319d8269a911c4032f24950cde52e76f46e9ecbebfcb762f28c"
+                    "sha256": "6f70a624d1321319d8269a911c4032f24950cde52e76f46e9ecbebfcb762f28c",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/AcademySoftwareFoundation/openexr/releases/latest",
+                        "version-query": ".tag_name | sub(\"^v\"; \"\")",
+                        "url-query": "\"https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v\" + $version + \".tar.gz\""
+                    }
                 }
             ],
             "cleanup": [
@@ -272,7 +339,12 @@
                 {
                     "type": "archive",
                     "url": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.38/GraphicsMagick-1.3.38.tar.xz",
-                    "sha256": "d60cd9db59351d2b9cb19beb443170acaa28f073d13d258f67b3627635e32675"
+                    "sha256": "d60cd9db59351d2b9cb19beb443170acaa28f073d13d258f67b3627635e32675",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 1248,
+                        "url-template": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/$version/GraphicsMagick-$version.tar.xz"
+                    }
                 }
             ]
         },
@@ -292,7 +364,12 @@
                 {
                     "type": "archive",
                     "url": "https://gmic.eu/files/source/gmic_3.0.0.tar.gz",
-                    "sha256": "3f056bb9e6dbf0674af4c8dce59f4198172187662f7fbb36cc63ebc8c1b71120"
+                    "sha256": "3f056bb9e6dbf0674af4c8dce59f4198172187662f7fbb36cc63ebc8c1b71120",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 10217,
+                        "url-template": "https://gmic.eu/files/source/gmic_$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -328,7 +405,11 @@
                             "type": "git",
                             "url": "https://aomedia.googlesource.com/aom",
                             "tag": "v3.2.0",
-                            "commit": "287164de79516c25c8c84fd544f67752c170082a"
+                            "commit": "287164de79516c25c8c84fd544f67752c170082a",
+                            "x-checker-data": {
+                                "type": "git",
+                                "tag-pattern": "^v([\\d.]+)$"
+                            }
                         }
                     ]
                 }
@@ -337,7 +418,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/AOMediaCodec/libavif/archive/refs/tags/v0.9.1.tar.gz",
-                    "sha256": "8526f3fff34a05a51d7c703cdcf1d0d38c939b5b6dd4bb7d3a3405ddad88186c"
+                    "sha256": "8526f3fff34a05a51d7c703cdcf1d0d38c939b5b6dd4bb7d3a3405ddad88186c",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/AOMediaCodec/libavif/releases/latest",
+                        "version-query": ".tag_name | sub(\"^v\"; \"\")",
+                        "url-query": "\"https://github.com/AOMediaCodec/libavif/archive/refs/tags/v\" + $version + \".tar.gz\""
+                    }
                 }
             ]
         },
@@ -351,7 +438,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/strukturag/libde265/archive/v1.0.8.tar.gz",
-                    "sha256": "c5ab61185f283f46388c700c43dc08606b0e260cd53f06b967ec0ad7a809ff11"
+                    "sha256": "c5ab61185f283f46388c700c43dc08606b0e260cd53f06b967ec0ad7a809ff11",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/strukturag/libde265/releases/latest",
+                        "version-query": ".tag_name | sub(\"^v\"; \"\")",
+                        "url-query": "\"https://github.com/strukturag/libde265/releases/download/v\" + $version + \"/libde265-\" + $version + \".tar.gz\""
+                    }
                 }
             ]
         },
@@ -396,7 +489,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/jasper-software/jasper/archive/version-2.0.33.tar.gz",
-                    "sha256": "38b8f74565ee9e7fec44657e69adb5c9b2a966ca5947ced5717cde18a7d2eca6"
+                    "sha256": "38b8f74565ee9e7fec44657e69adb5c9b2a966ca5947ced5717cde18a7d2eca6",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/jasper-software/jasper/releases/latest",
+                        "version-query": ".tag_name | sub(\"^version-\"; \"\")",
+                        "url-query": "\"https://github.com/jasper-software/jasper/releases/download/version-\" + $version + \"/jasper-\" + $version + \".tar.gz\""
+                    }
                 }
             ]
         },
@@ -437,7 +536,13 @@
                         {
                             "type": "archive",
                             "url": "https://github.com/google/highway/archive/refs/tags/1.0.2.tar.gz",
-                            "sha256": "e8ef71236ac0d97f12d553ec1ffc5b6375d57b5f0b860c7447dd69b6ed1072db"
+                            "sha256": "e8ef71236ac0d97f12d553ec1ffc5b6375d57b5f0b860c7447dd69b6ed1072db",
+                            "x-checker-data": {
+                                "type": "json",
+                                "url": "https://api.github.com/repos/google/highway/releases/latest",
+                                "version-query": ".tag_name",
+                                "url-query": "\"https://github.com/google/highway/archive/refs/tags/\" + $version + \".tar.gz\""
+                            }
                         }
                     ]
                 }
@@ -446,7 +551,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/libjxl/libjxl/archive/refs/tags/v0.7.0.tar.gz",
-                    "sha256": "3114bba1fabb36f6f4adc2632717209aa6f84077bc4e93b420e0d63fa0455c5e"
+                    "sha256": "3114bba1fabb36f6f4adc2632717209aa6f84077bc4e93b420e0d63fa0455c5e",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/libjxl/libjxl/releases/latest",
+                        "version-query": ".tag_name | sub(\"^v\"; \"\")",
+                        "url-query": "\"https://github.com/libjxl/libjxl/archive/refs/tags/v\" + $version + \".tar.gz\""
+                    }
                 }
             ]
         },
@@ -470,7 +581,12 @@
                 {
                     "type": "archive",
                     "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.34.1.tar.xz",
-                    "sha256": "3a0755dd1cfab71a24dd96df3498c29cd0acd13b04f3d08bf933e81286db802c"
+                    "sha256": "3a0755dd1cfab71a24dd96df3498c29cd0acd13b04f3d08bf933e81286db802c",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 5350,
+                        "url-template": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-$version.tar.xz"
+                    }
                 }
             ]
         },
@@ -487,7 +603,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/darktable-org/darktable/releases/download/release-4.2.1/darktable-4.2.1.tar.xz",
-                    "sha256": "603a39c6074291a601f7feb16ebb453fd0c5b02a6f5d3c7ab6db612eadc97bac"
+                    "sha256": "603a39c6074291a601f7feb16ebb453fd0c5b02a6f5d3c7ab6db612eadc97bac",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/darktable-org/darktable/releases/latest",
+                        "version-query": ".tag_name | sub(\"^release-\"; \"\")",
+                        "url-query": ".assets[] | select(.name==\"darktable-\" + $version + \".tar.xz\") | .browser_download_url"
+                    }
                 },
                 {
                     "type": "patch",
