@@ -370,7 +370,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/strukturag/libheif/archive/v1.13.0.tar.gz",
-                    "sha256": "50def171af4bc8991211d6027f3cee4200a86bbe60fddb537799205bf216ddca"
+                    "sha256": "50def171af4bc8991211d6027f3cee4200a86bbe60fddb537799205bf216ddca",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/strukturag/libheif/releases/latest",
+                        "version-query": ".tag_name | sub(\"^v\"; \"\")",
+                        "url-query": "\"https://github.com/strukturag/libheif/archive/v\" + $version + \".tar.gz\""
+                    }
                 }
             ]
         },
