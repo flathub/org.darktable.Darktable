@@ -200,7 +200,6 @@
                 "-Dudev_rules=false",
                 "-Dsystemd=false",
                 "-Dargyllcms_sensor=false",
-                "-Dreverse=false",
                 "-Dsane=false",
                 "-Dtests=false",
                 "-Dinstalled_tests=false",
