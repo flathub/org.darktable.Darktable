@@ -1,14 +1,11 @@
-diff -u -r darktable-3.6.1-orig/data/darktable.appdata.xml.in darktable-3.6.1/data/darktable.appdata.xml.in
---- darktable-3.6.1-orig/data/darktable.appdata.xml.in	2021-09-19 15:22:47.328747817 +0200
-+++ darktable-3.6.1/data/darktable.appdata.xml.in	2021-09-19 15:24:14.769958923 +0200
-@@ -49,8 +49,9 @@
-   </screenshots>
-   <content_rating type="oars-1.1" />
-   <releases>
-+    <release date="2022-12-21" version="4.2.0"/>
-     <release date="2022-09-17" version="4.0.1"/>
-     <release date="2022-07-02" version="4.0.0"/>
-     <release date="2022-02-11" version="3.8.1"/>
-     <release date="2021-12-24" version="3.8.0"/>
-     <release date="2021-09-15" version="3.6.1"/>
-
+--- darktable-1/data/org.darktable.darktable.appdata.xml.in-orig	2023-02-23 00:16:50.408327493 -0500
++++ darktable-1/data/org.darktable.darktable.appdata.xml.in	2023-02-23 00:17:03.312545749 -0500
+@@ -2,7 +2,7 @@
+ <!-- Copyright (C) 2009-2021 darktable developers.
+ -->
+ <component type="desktop">
+-  <id>org.darktable.darktable</id>
++  <id>org.darktable.Darktable</id>
+   <name>darktable</name>
+   <launchable type="desktop-id">org.darktable.darktable.desktop</launchable>
+   <metadata_license>CC0-1.0</metadata_license>
