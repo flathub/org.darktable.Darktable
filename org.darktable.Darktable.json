@@ -42,6 +42,17 @@
         "*.a",
         "*.la"
     ],
+    "add-extensions": {
+        "org.darktable.Darktable.Plugin": {
+            "version": "4.2",
+            "directory": "extensions",
+            "add-ld-path": "lib",
+            "merge-dirs": "lib/darktable/plugins",
+            "subdirectories": "true",
+            "no-autodownload": "true",
+            "autodelete": "true"
+        }
+    },
     "modules": [
         "shared-modules/lua5.4/lua-5.4.json",
         {
@@ -562,6 +573,9 @@
                     "type": "patch",
                     "path": "darktable-appdata.patch"
                 }
+            ],
+            "post-install": [
+                "install -d /app/extensions"
             ]
         }
     ]
