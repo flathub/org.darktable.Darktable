@@ -1,7 +1,7 @@
 {
     "app-id": "org.darktable.Darktable",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "43",
+    "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
     "command": "darktable",
     "rename-desktop-file": "org.darktable.darktable.desktop",
@@ -109,8 +109,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Exiv2/exiv2/releases/download/v0.27.5/exiv2-0.27.5-Source.tar.gz",
-                    "sha256": "35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2"
+                    "url": "https://github.com/Exiv2/exiv2/releases/download/v0.27.6/exiv2-0.27.6-Source.tar.gz",
+                    "sha256": "4c192483a1125dc59a3d70b30d30d32edace9e14adf52802d2f853abf72db8a6"
                 }
             ]
         },
@@ -136,7 +136,8 @@
             "buildsystem": "meson",
             "config-opts": [
                 "-Dtests=false",
-                "-Ddocs=false"
+                "-Ddocs=false",
+                "-Dvapi=false"
             ],
             "sources": [
                 {
@@ -207,6 +208,7 @@
                 }
             ]
         },
+        "shared-modules/libsoup/libsoup-2.4.json",
         {
             "name": "osm-gps-map",
             "sources": [
