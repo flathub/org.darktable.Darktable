@@ -293,8 +293,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gmic.eu/files/source/gmic_3.0.0.tar.gz",
-                    "sha256": "3f056bb9e6dbf0674af4c8dce59f4198172187662f7fbb36cc63ebc8c1b71120"
+                    "url": "https://gmic.eu/files/source/gmic_3.0.2.tar.gz",
+                    "sha256": "68acec32c45d56fb0b0408acec4f63166171816d70722d63106787f1e7d17030"
                 }
             ]
         },
@@ -486,7 +486,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/darktable-org/darktable/releases/download/release-4.4.1/darktable-4.4.1.tar.xz",
-                    "sha256": "e043d38d2e8adb67af7690b12b535a40e8ec7bea05cfa8684db8b21a626e0f0d"
+                    "sha256": "e043d38d2e8adb67af7690b12b535a40e8ec7bea05cfa8684db8b21a626e0f0d",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/darktable-org/darktable/releases/latest",
+                        "version-query": ".tag_name | sub(\"^release-\"; \"\")",
+                        "url-query": ".assets[] | select(.name==\"darktable-\" + $version + \".tar.xz\") | .browser_download_url"
+                    }
                 }
             ]
         }
