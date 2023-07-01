@@ -92,7 +92,7 @@
                     /* used only for database*/
                     "dest": "lensfun-git",
                     "url": "https://github.com/lensfun/lensfun.git",
-                    "commit": "011de2e85813ff496a85404b30891352555de077"
+                    "commit": "c661a4a6405bb63ad390a5bafc2d8d8e482c0355"
                 }
             ]
         },
@@ -479,15 +479,14 @@
                 "-DTESTBUILD_OPENCL_PROGRAMS=OFF"
             ],
             "builddir": true,
+            "post-install": [
+                "appstream-util modify $FLATPAK_DEST/share/metainfo/org.darktable.darktable.appdata.xml id $FLATPAK_ID"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/darktable-org/darktable/releases/download/release-4.4.0/darktable-4.4.0.tar.xz",
-                    "sha256": "8887fc34abd97c4998b0888c3197e0c509d63bdeab2238906915319811f3b080"
-                },
-                {
-                    "type": "patch",
-                    "path": "darktable-appdata.patch"
+                    "url": "https://github.com/darktable-org/darktable/releases/download/release-4.4.1/darktable-4.4.1.tar.xz",
+                    "sha256": "e043d38d2e8adb67af7690b12b535a40e8ec7bea05cfa8684db8b21a626e0f0d"
                 }
             ]
         }
