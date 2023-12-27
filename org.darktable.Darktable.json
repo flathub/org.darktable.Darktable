@@ -1,7 +1,7 @@
 {
     "app-id": "org.darktable.Darktable",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "44",
+    "runtime-version": "45",
     "sdk": "org.gnome.Sdk",
     "command": "darktable",
     "rename-desktop-file": "org.darktable.darktable.desktop",
@@ -34,8 +34,10 @@
         "/lib/girepository-*",
         "/man",
         "/share/doc",
-        "/share/gtk-doc/html/libosmgpsmap",
+        "/share/gir-1.0",
+        "/share/gtk-doc",
         "/share/man",
+        "/share/vala",
         "*.a",
         "*.la"
     ],
@@ -105,8 +107,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Exiv2/exiv2/releases/download/v0.27.6/exiv2-0.27.6-Source.tar.gz",
-                    "sha256": "4c192483a1125dc59a3d70b30d30d32edace9e14adf52802d2f853abf72db8a6"
+                    "url": "https://github.com/Exiv2/exiv2/releases/download/v0.27.7/exiv2-0.27.7-Source.tar.gz",
+                    "sha256": "70629dc27e3d4dd5c3fa91afbea93166d338b1de284e6a4c44bbf9dcfe7bbc6d"
                 }
             ]
         },
@@ -149,8 +151,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/PortMidi/portmidi/archive/refs/tags/v2.0.3.tar.gz",
-                    "sha256": "934f80e1b09762664d995e7ab5a9932033bc70639e8ceabead817183a54c60d0"
+                    "url": "https://github.com/PortMidi/portmidi/archive/refs/tags/v2.0.4.tar.gz",
+                    "sha256": "64893e823ae146cabd3ad7f9a9a9c5332746abe7847c557b99b2577afa8a607c"
                 }
             ]
         },
@@ -199,8 +201,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/gphoto/libgphoto2/releases/download/v2.5.30/libgphoto2-2.5.30.tar.bz2",
-                    "sha256": "ee61a1dac6ad5cf711d114e06b90a6d431961a6e7ec59f4b757a7cd77b1c0fb4"
+                    "url": "https://github.com/gphoto/libgphoto2/releases/download/v2.5.31/libgphoto2-2.5.31.tar.bz2",
+                    "sha256": "4f81c34c0b812bee67afd5f144940fbcbe01a2055586a6a1fa2d0626024a545b"
                 }
             ]
         },
@@ -224,8 +226,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.3.tar.gz",
-                    "sha256": "0bf7ec51162c4d17a4c5b850fb3f6f7a195cff9fa71f4da7735f74d7b5124320"
+                    "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.7.tar.gz",
+                    "sha256": "bff1fa140f4af0e7f02c6cb78d41b9a7d5508e6bcdfda3a583e35460eb6d4b47"
                 }
             ],
             "cleanup": [
@@ -239,14 +241,13 @@
             "config-opts": [
                 "-DOPENEXR_BUILD_TOOLS=OFF",
                 "-DOPENEXR_INSTALL_EXAMPLES=OFF",
-                "-DOPENEXR_INSTALL_TOOLS=OFF",
-                "-DDOCS=OFF"
+                "-DOPENEXR_INSTALL_TOOLS=OFF"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.1.3.tar.gz",
-                    "sha256": "6f70a624d1321319d8269a911c4032f24950cde52e76f46e9ecbebfcb762f28c"
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.1.7.tar.gz",
+                    "sha256": "78dbca39115a1c526e6728588753955ee75fa7f5bb1a6e238bed5b6d66f91fd7"
                 }
             ],
             "cleanup": [
@@ -269,8 +270,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.38/GraphicsMagick-1.3.38.tar.xz",
-                    "sha256": "d60cd9db59351d2b9cb19beb443170acaa28f073d13d258f67b3627635e32675"
+                    "url": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.42/GraphicsMagick-1.3.42.tar.xz",
+                    "sha256": "484fccfd2b2faf6c2ba9151469ece5072bcb91ba4ed73e75ed3d8e46c759d557"
                 }
             ]
         },
@@ -356,6 +357,9 @@
         {
             "name": "libheif",
             "buildsystem": "cmake-ninja",
+            "build-options": {
+                "cxxflags": "-Wno-error=maybe-uninitialized"
+            },
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
                 "-DWITH_EXAMPLES=0",
