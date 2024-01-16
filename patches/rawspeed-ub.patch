@@ -1,0 +1,51 @@
+From 3d44f07a57fe92441cd22aca6a83ecf4995e4ed8 Mon Sep 17 00:00:00 2001
+From: Roman Lebedev <lebedev.ri@gmail.com>
+Date: Thu, 21 Dec 2023 02:01:16 +0300
+Subject: [PATCH] VC5Decompressor: PrefixCodeDecoder is late-init'd
+
+HighPassBand should take reference to optional...
+---
+ src/librawspeed/decompressors/VC5Decompressor.cpp | 4 ++--
+ src/librawspeed/decompressors/VC5Decompressor.h   | 5 +++--
+ 2 files changed, 5 insertions(+), 4 deletions(-)
+
+diff --git a/src/librawspeed/decompressors/VC5Decompressor.cpp b/src/librawspeed/decompressors/VC5Decompressor.cpp
+index 54e5145d5..7fef49725 100644
+--- a/src/librawspeed/decompressors/VC5Decompressor.cpp
++++ b/src/librawspeed/decompressors/VC5Decompressor.cpp
+@@ -724,7 +724,7 @@ VC5Decompressor::Wavelet::HighPassBand::decode() const {
+   };
+ 
+   // decode highpass band
+-  DeRLVer d(decoder, bs, quant);
++  DeRLVer d(*decoder, bs, quant);
+   BandData highpass;
+   auto& band = highpass.description;
+   band = Array2DRef<int16_t>::create(highpass.storage, wavelet.width,
+@@ -790,7 +790,7 @@ void VC5Decompressor::parseLargeCodeblock(ByteStream bs) {
+   } else {
+     if (!mVC5.quantization.has_value())
+       ThrowRDE("Did not see VC5Tag::Quantization yet");
+-    dstBand = std::make_unique<Wavelet::HighPassBand>(wavelet, bs, *codeDecoder,
++    dstBand = std::make_unique<Wavelet::HighPassBand>(wavelet, bs, codeDecoder,
+                                                       *mVC5.quantization);
+     mVC5.quantization.reset();
+   }
+diff --git a/src/librawspeed/decompressors/VC5Decompressor.h b/src/librawspeed/decompressors/VC5Decompressor.h
+index cf33b74b9..f5f8e18f0 100644
+--- a/src/librawspeed/decompressors/VC5Decompressor.h
++++ b/src/librawspeed/decompressors/VC5Decompressor.h
+@@ -182,10 +182,11 @@ class VC5Decompressor final : public AbstractDecompressor {
+       [[nodiscard]] BandData decode() const noexcept override;
+     };
+     struct HighPassBand final : AbstractDecodeableBand {
+-      const PrefixCodeDecoder& decoder;
++      const std::optional<PrefixCodeDecoder>& decoder;
+       int16_t quant;
+       HighPassBand(Wavelet& wavelet_, ByteStream bs_,
+-                   const PrefixCodeDecoder& decoder_, int16_t quant_)
++                   const std::optional<PrefixCodeDecoder>& decoder_,
++                   int16_t quant_)
+           : AbstractDecodeableBand(wavelet_, bs_), decoder(decoder_),
+             quant(quant_) {}
+       [[nodiscard]] BandData decode() const override;
