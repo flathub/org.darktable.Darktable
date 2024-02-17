@@ -90,7 +90,7 @@
                     "type": "git",
                     "dest": "lensfun-git",
                     "url": "https://github.com/lensfun/lensfun.git",
-                    "commit": "f034ab32b1afc144f2bcc1471340fb68fb4e94ea"
+                    "commit": "f882f1bac3c5b1fecc3a04f5ca0c7538f8c6a2d1"
                 }
             ]
         },
@@ -479,9 +479,6 @@
                 "-DTESTBUILD_OPENCL_PROGRAMS=OFF"
             ],
             "builddir": true,
-            "post-install": [
-                "appstream-util modify $FLATPAK_DEST/share/metainfo/org.darktable.darktable.appdata.xml id $FLATPAK_ID"
-            ],
             "sources": [
                 {
                     "type": "archive",
@@ -496,11 +493,7 @@
                 },
                 {
                     "type": "patch",
-                    "path": "patches/rawspeed-ub.patch",
-                    "options": [
-                        "-d",
-                        "src/external/rawspeed"
-                    ]
+                    "path": "patches/darktable-appdata-version.patch"
                 }
             ]
         }
