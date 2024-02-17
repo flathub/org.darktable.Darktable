@@ -1,0 +1,21 @@
+diff --git a/data/org.darktable.darktable.appdata.xml.in b/data/org.darktable.darktable.appdata.xml.in
+index f2c37cf95f..fc9064c58c 100644
+--- a/data/org.darktable.darktable.appdata.xml.in
++++ b/data/org.darktable.darktable.appdata.xml.in
+@@ -7,6 +7,7 @@
+   <launchable type="desktop-id">org.darktable.darktable.desktop</launchable>
+   <metadata_license>CC0-1.0</metadata_license>
+   <project_license>GPL-3.0+</project_license>
++  <developer_name>darktable developers</developer_name>
+   <_summary>Organize and develop images from digital cameras</_summary>
+   <translation type="gettext">darktable</translation>
+   <description>
+@@ -48,7 +49,7 @@
+   </screenshots>
+   <content_rating type="oars-1.1" />
+   <releases>
+-    <release date="2024-02-21" version="4.6.1"/>
++    <release date="2024-02-17" version="4.6.1"/>
+     <release date="2023-12-21" version="4.6.0"/>
+     <release date="2023-07-22" version="4.4.2"/>
+     <release date="2023-07-01" version="4.4.1"/>
