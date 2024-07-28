@@ -512,10 +512,6 @@
                         "version-query": ".tag_name | sub(\"^release-\"; \"\")",
                         "url-query": ".assets[] | select(.name==\"darktable-\" + $version + \".tar.xz\") | .browser_download_url"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/darktable-appdata-version.patch"
                 }
             ]
         }
