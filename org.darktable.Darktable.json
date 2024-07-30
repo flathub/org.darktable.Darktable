@@ -16,6 +16,7 @@
         "--talk-name=org.freedesktop.secrets",
         "--metadata=X-DConf=migrate-path=/org/darktable/Darktable/",
         "--system-talk-name=org.freedesktop.ColorManager",
+        "--own-name=org.darktable.service",
         "--talk-name=org.gtk.vfs.*",
         "--filesystem=xdg-run/gvfs",
         "--filesystem=xdg-run/gvfsd",
