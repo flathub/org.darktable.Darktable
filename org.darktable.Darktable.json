@@ -1,7 +1,7 @@
 {
     "app-id": "org.darktable.Darktable",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "45",
+    "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
     "command": "darktable",
     "rename-desktop-file": "org.darktable.darktable.desktop",
@@ -91,7 +91,7 @@
                     "type": "git",
                     "dest": "lensfun-git",
                     "url": "https://github.com/lensfun/lensfun.git",
-                    "commit": "f882f1bac3c5b1fecc3a04f5ca0c7538f8c6a2d1"
+                    "commit": "766ef7b02c72686deec3d766f931b5925122e9c3"
                 }
             ]
         },
