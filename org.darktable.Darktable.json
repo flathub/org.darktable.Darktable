@@ -390,8 +390,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/darktable-org/darktable/releases/download/release-4.8.1/darktable-4.8.1.tar.xz",
-                    "sha256": "901b0e2caed36fb8619fdf4c60edfb8d31134b947d3054b5c66fd55c38af5991",
+                    "url": "https://github.com/darktable-org/darktable/releases/download/release-5.0.0/darktable-5.0.0.tar.xz",
+                    "sha256": "eaa136e6e624bb53127282e26aafa0441abcc189b55371465e1f5a8a493fa3a1",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/darktable-org/darktable/releases/latest",
