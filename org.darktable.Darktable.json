@@ -131,7 +131,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.3.tar.gz",
-                    "sha256": "1315e17d454bf4da3cc0edb857b1d2c143670f3485b537d0f946d9ed31d87b70"
+                    "sha256": "1315e17d454bf4da3cc0edb857b1d2c143670f3485b537d0f946d9ed31d87b70",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 769,
+                        "stable-only": true,
+                        "url-template": "https://github.com/Exiv2/exiv2/archive/refs/tags/v$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -146,8 +152,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/zeux/pugixml/releases/download/v1.11.4/pugixml-1.11.4.tar.gz",
-                    "sha256": "8ddf57b65fb860416979a3f0640c2ad45ddddbbafa82508ef0a0af3ce7061716"
+                    "url": "https://github.com/zeux/pugixml/releases/download/v1.14/pugixml-1.14.tar.gz",
+                    "sha256": "2f10e276870c64b1db6809050a75e11a897a8d7456c4be5c6b2e35a11168a015",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 3728,
+                        "stable-only": true,
+                        "url-template": "https://github.com/zeux/pugixml/releases/download/v$version/pugixml-$version.tar.gz"
+                        }
                 }
             ]
         },
@@ -163,8 +175,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://people.freedesktop.org/~hughsient/releases/libgusb-0.3.9.tar.xz",
-                    "sha256": "1f51ebe8c91140cffbd1c4d58602c96b884170cae4c74f6f7e302a91d5b7c972"
+                    "url": "https://github.com/hughsie/libgusb/releases/download/0.4.9/libgusb-0.4.9.tar.xz",
+                    "sha256": "9df5ef301d6a4b361002aa52cce1165a87a89744055879bdbab31e7e86f1e846",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 5505,
+                        "stable-only": true,
+                        "url-template": "https://github.com/hughsie/libgusb/releases/download/$version/libgusb-$version.tar.xz"
+                        }
                 }
             ]
         },
@@ -189,7 +207,6 @@
                 "-Dudev_rules=false",
                 "-Dsystemd=false",
                 "-Dargyllcms_sensor=false",
-                "-Dreverse=false",
                 "-Dsane=false",
                 "-Dtests=false",
                 "-Dinstalled_tests=false",
@@ -199,8 +216,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.freedesktop.org/software/colord/releases/colord-1.4.5.tar.xz",
-                    "sha256": "b774ea443d239f4a2ee1853bd678426e669ddeda413dcb71cea1638c4d6c5e17"
+                    "url": "https://www.freedesktop.org/software/colord/releases/colord-1.4.7.tar.xz",
+                    "sha256": "de02d9910634ae159547585cec414e450f711c27235453b4f9b38a9f2361a653",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 10190,
+                        "stable-only": true,
+                        "url-template": "https://www.freedesktop.org/software/colord/releases/colord-$version.tar.xz"
+                    }
                 }
             ]
         },
@@ -214,8 +237,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.freedesktop.org/software/colord/releases/colord-gtk-0.2.0.tar.xz",
-                    "sha256": "2a4cfae08bc69f000f40374934cd26f4ae86d286ce7de89f1622abc59644c717"
+                    "url": "https://www.freedesktop.org/software/colord/releases/colord-gtk-0.3.1.tar.xz",
+                    "sha256": "c176b889b75630a17f4e3d7ef24c09a3e12368e633496087459c8b53ac3a122d",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 331,
+                        "stable-only": true,
+                        "url-template": "https://www.freedesktop.org/software/colord/releases/colord-gtk-$version.tar.xz"
+                    }
                 }
             ]
         },
@@ -225,7 +254,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/gphoto/libgphoto2/releases/download/v2.5.31/libgphoto2-2.5.31.tar.bz2",
-                    "sha256": "4f81c34c0b812bee67afd5f144940fbcbe01a2055586a6a1fa2d0626024a545b"
+                    "sha256": "4f81c34c0b812bee67afd5f144940fbcbe01a2055586a6a1fa2d0626024a545b",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 12558,
+                        "stable-only": true,
+                        "url-template": "https://github.com/gphoto/libgphoto2/releases/download/v$version/libgphoto2-$version.tar.bz2"
+                    }
                 }
             ]
         },
@@ -236,7 +271,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/nzjrs/osm-gps-map/releases/download/1.2.0/osm-gps-map-1.2.0.tar.gz",
-                    "sha256": "ddec11449f37b5dffb4bca134d024623897c6140af1f9981a8acc512dbf6a7a5"
+                    "sha256": "ddec11449f37b5dffb4bca134d024623897c6140af1f9981a8acc512dbf6a7a5",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 6826,
+                        "stable-only": true,
+                        "url-template": "https://github.com/nzjrs/osm-gps-map/releases/download/$version/osm-gps-map-$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -249,8 +290,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.7.tar.gz",
-                    "sha256": "bff1fa140f4af0e7f02c6cb78d41b9a7d5508e6bcdfda3a583e35460eb6d4b47"
+                    "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.12.tar.gz",
+                    "sha256": "8a1bc258f3149b5729c2f4f8ffd337c0e57f09096e4ba9784329f40c4a9035da",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 223366,
+                        "stable-only": true,
+                        "url-template": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v$version.tar.gz"
+                    }
                 }
             ],
             "cleanup": [
@@ -259,18 +306,50 @@
             ]
         },
         {
+            "name": "libdeflate",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DLIBDEFLATE_BUILD_STATIC_LIB=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/ebiggers/libdeflate/releases/download/v1.23/libdeflate-1.23.tar.gz",
+                    "sha256": "2351465b9e81883564b142b6c951045b36055c73c7e202c283fc1d90fe7fe22c",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 242778,
+                        "stable-only": true,
+                        "url-template": "https://github.com/ebiggers/libdeflate/releases/download/v$version/libdeflate-$version.tar.gz"
+                    }
+                }
+            ],
+            "cleanup": [
+                "/bin",
+                "/include",
+                "/lib/*.la",
+                "/lib/pkgconfig",
+                "/share/aclocal"
+            ]
+        },
+        {
             "name": "openexr",
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DOPENEXR_BUILD_TOOLS=OFF",
-                "-DOPENEXR_INSTALL_EXAMPLES=OFF",
                 "-DOPENEXR_INSTALL_TOOLS=OFF"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.1.7.tar.gz",
-                    "sha256": "78dbca39115a1c526e6728588753955ee75fa7f5bb1a6e238bed5b6d66f91fd7"
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.2.tar.gz",
+                    "sha256": "5013e964de7399bff1dd328cbf65d239a989a7be53255092fa10b85a8715744d",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 13289,
+                        "stable-only": true,
+                        "url-template": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v$version.tar.gz"
+                    }
                 }
             ],
             "cleanup": [
@@ -293,8 +372,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.42/GraphicsMagick-1.3.42.tar.xz",
-                    "sha256": "484fccfd2b2faf6c2ba9151469ece5072bcb91ba4ed73e75ed3d8e46c759d557"
+                    "url": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.45/GraphicsMagick-1.3.45.tar.xz",
+                    "sha256": "dcea5167414f7c805557de2d7a47a9b3147bcbf617b91f5f0f4afe5e6543026b",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 1248,
+                        "stable-only": true,
+                        "url-template": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/$version/GraphicsMagick-$version.tar.xz"
+                    }
                 }
             ]
         },
@@ -313,8 +398,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gmic.eu/files/source/gmic_3.0.2.tar.gz",
-                    "sha256": "68acec32c45d56fb0b0408acec4f63166171816d70722d63106787f1e7d17030"
+                    "url": "https://gmic.eu/files/source/gmic_3.4.3.tar.gz",
+                    "sha256": "79951d06db2928c68bad1d352e536af3f454e9a3c09beefc2c1049d8b4084507",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 10217,
+                        "stable-only": true,
+                        "url-template": "https://gmic.eu/files/source/gmic_$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -327,8 +418,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/strukturag/libde265/archive/v1.0.8.tar.gz",
-                    "sha256": "c5ab61185f283f46388c700c43dc08606b0e260cd53f06b967ec0ad7a809ff11"
+                    "url": "https://github.com/strukturag/libde265/archive/v1.0.15.tar.gz",
+                    "sha256": "d4e55706dfc5b2c5c9702940b675ce2d3e7511025c6894eaddcdbaf0b15fd3f3",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 11239,
+                        "stable-only": true,
+                        "url-template": "https://github.com/strukturag/libde265/archive/v$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -343,14 +440,20 @@
                 "-DWITH_EXAMPLES=0",
                 "-DWITH_X265=0",
                 "-DWITH_RAV1E=0",
-                "-DWITH_AOM=0",
-                "-DWITH_DAV1D=0"
+                "-DWITH_DAV1D=0",
+                "-DCMAKE_COMPILE_WARNING_AS_ERROR=OFF"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/strukturag/libheif/archive/v1.13.0.tar.gz",
-                    "sha256": "50def171af4bc8991211d6027f3cee4200a86bbe60fddb537799205bf216ddca"
+                    "url": "https://github.com/strukturag/libheif/archive/v1.19.5.tar.gz",
+                    "sha256": "5cd9a3e28493310358e1c1299cd596cc4c7ae5fb985eceb758fa6141424e58bb",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 64439,
+                        "stable-only": true,
+                        "url-template": "https://github.com/strukturag/libheif/archive/v$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -373,8 +476,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.34.1.tar.xz",
-                    "sha256": "3a0755dd1cfab71a24dd96df3498c29cd0acd13b04f3d08bf933e81286db802c"
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.47.1.tar.xz",
+                    "sha256": "f3d8f9bb23ae392374e91cd9d395970dabc5b9c5ee72f39884613cd84a6ed310",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 5350,
+                        "stable-only": true,
+                        "url-template": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-$version.tar.xz"
+                    }
                 }
             ]
         },
