@@ -23,8 +23,7 @@
         "--device=all"
     ],
     "cleanup": [
-        "/include",
-        "/bin/exiv2*",
+        "/include",        
         "/bin/*lensfun*",
         "/bin/metacopy",
         "/bin/pathtest",
@@ -123,7 +122,7 @@
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DEXIV2_BUILD_DOC:BOOL=OFF",
-                "-DEXIV2_BUILD_EXIV2_COMMAND=OFF",
+                "-DEXIV2_BUILD_EXIV2_COMMAND=ON",
                 "-DEXIV2_ENABLE_BMFF=ON",
                 "-DEXIV2_BUILD_SAMPLES=OFF"
             ],
