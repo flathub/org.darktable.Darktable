@@ -130,8 +130,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.3.tar.gz",
-                    "sha256": "1315e17d454bf4da3cc0edb857b1d2c143670f3485b537d0f946d9ed31d87b70",
+                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.5.tar.gz",
+                    "sha256": "e1671f744e379a87ba0c984617406fdf8c0ad0c594e5122f525b2fb7c28d394d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 769,
@@ -152,14 +152,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/zeux/pugixml/releases/download/v1.14/pugixml-1.14.tar.gz",
-                    "sha256": "2f10e276870c64b1db6809050a75e11a897a8d7456c4be5c6b2e35a11168a015",
+                    "url": "https://github.com/zeux/pugixml/releases/download/v1.15/pugixml-1.15.tar.gz",
+                    "sha256": "655ade57fa703fb421c2eb9a0113b5064bddb145d415dd1f88c79353d90d511a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3728,
                         "stable-only": true,
                         "url-template": "https://github.com/zeux/pugixml/releases/download/v$version/pugixml-$version.tar.gz"
-                        }
+                    }
                 }
             ]
         },
@@ -182,7 +182,7 @@
                         "project-id": 5505,
                         "stable-only": true,
                         "url-template": "https://github.com/hughsie/libgusb/releases/download/$version/libgusb-$version.tar.xz"
-                        }
+                    }
                 }
             ]
         },
@@ -342,8 +342,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.2.tar.gz",
-                    "sha256": "5013e964de7399bff1dd328cbf65d239a989a7be53255092fa10b85a8715744d",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.3.tar.gz",
+                    "sha256": "0ffbd842a7ee2128d44affdea30f42294b4061293cde3aa75b61a53573413d1e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
@@ -398,8 +398,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gmic.eu/files/source/gmic_3.4.3.tar.gz",
-                    "sha256": "79951d06db2928c68bad1d352e536af3f454e9a3c09beefc2c1049d8b4084507",
+                    "url": "https://gmic.eu/files/source/gmic_3.5.3.tar.gz",
+                    "sha256": "e91a7cac4d0dc7c0ca2620f03bb14af82aa738c85a11b4f82fcc738654606442",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10217,
@@ -446,8 +446,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/strukturag/libheif/archive/v1.19.5.tar.gz",
-                    "sha256": "5cd9a3e28493310358e1c1299cd596cc4c7ae5fb985eceb758fa6141424e58bb",
+                    "url": "https://github.com/strukturag/libheif/archive/v1.19.7.tar.gz",
+                    "sha256": "8334c7c418f82c30c9bec1f46e6abfd5a8d3c420a3210d5505eb1868696ce0cc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 64439,
@@ -476,8 +476,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.47.1.tar.xz",
-                    "sha256": "f3d8f9bb23ae392374e91cd9d395970dabc5b9c5ee72f39884613cd84a6ed310",
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.49.0.tar.xz",
+                    "sha256": "618190cf590b7e9f6c11f91f23b1d267cd98c3ab33b850416d8758f8b5a85628",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5350,
