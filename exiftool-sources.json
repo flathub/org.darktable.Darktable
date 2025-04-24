@@ -1,0 +1,29 @@
+[
+   {
+      "dest": "perl-libs/Image-ExifTool",
+      "sha256": "1cd555144846a28298783bebf3ab452235273c78358410813e3d4e93c653b1fa",
+      "type": "archive",
+      "url": "https://cpan.metacpan.org/authors/id/E/EX/EXIFTOOL/Image-ExifTool-13.25.tar.gz"
+   },
+   {
+      "commands": [
+         "set -e",
+         "function make_install {",
+         "    mod_dir=$1",
+         "    cd $mod_dir",
+         "    if [ -f 'Makefile.PL' ]; then",
+         "        perl Makefile.PL PREFIX=${FLATPAK_DEST} && make install PREFIX=${FLATPAK_DEST}",
+         "    elif [ -f 'Build.PL' ]; then",
+         "        perl Build.PL && ./Build && ./Build install",
+         "    else",
+         "        echo 'No Makefile.PL or Build.PL found. Do not know how to install this module'",
+         "        exit 1",
+         "    fi",
+         "}",
+         "(make_install perl-libs/Image-ExifTool)"
+      ],
+      "dest": "perl-libs",
+      "dest-filename": "install.sh",
+      "type": "script"
+   }
+]
