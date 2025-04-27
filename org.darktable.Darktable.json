@@ -446,8 +446,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/strukturag/libheif/archive/v1.19.7.tar.gz",
-                    "sha256": "8334c7c418f82c30c9bec1f46e6abfd5a8d3c420a3210d5505eb1868696ce0cc",
+                    "url": "https://github.com/strukturag/libheif/archive/v1.19.8.tar.gz",
+                    "sha256": "0d67481c2b3d855b27b162e21b39152100346098f75cb5da31db4003d9077680",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 64439,
