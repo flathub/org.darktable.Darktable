@@ -23,7 +23,7 @@
         "--device=all"
     ],
     "cleanup": [
-        "/include",        
+        "/include",
         "/bin/*lensfun*",
         "/bin/metacopy",
         "/bin/pathtest",
@@ -313,8 +313,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ebiggers/libdeflate/releases/download/v1.23/libdeflate-1.23.tar.gz",
-                    "sha256": "2351465b9e81883564b142b6c951045b36055c73c7e202c283fc1d90fe7fe22c",
+                    "url": "https://github.com/ebiggers/libdeflate/releases/download/v1.24/libdeflate-1.24.tar.gz",
+                    "sha256": "a0dda1c4b804742066db07b9510876edd09cc0ca06cdc32c5dfe1b2016a26463",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242778,
@@ -397,8 +397,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gmic.eu/files/source/gmic_3.5.3.tar.gz",
-                    "sha256": "e91a7cac4d0dc7c0ca2620f03bb14af82aa738c85a11b4f82fcc738654606442",
+                    "url": "https://gmic.eu/files/source/gmic_3.5.4.tar.gz",
+                    "sha256": "7e3a1aa75c00603fb01fa2cad686c8d2f1ec81dd820f6688cba3c44dd255aeef",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10217,
@@ -417,8 +417,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/strukturag/libde265/archive/v1.0.15.tar.gz",
-                    "sha256": "d4e55706dfc5b2c5c9702940b675ce2d3e7511025c6894eaddcdbaf0b15fd3f3",
+                    "url": "https://github.com/strukturag/libde265/archive/v1.0.16.tar.gz",
+                    "sha256": "ed12c931759c1575848832f70db5071a001ac813db4e4f568ee08aef6e234d4e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 11239,
@@ -445,8 +445,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/strukturag/libheif/archive/v1.19.7.tar.gz",
-                    "sha256": "8334c7c418f82c30c9bec1f46e6abfd5a8d3c420a3210d5505eb1868696ce0cc",
+                    "url": "https://github.com/strukturag/libheif/archive/v1.19.8.tar.gz",
+                    "sha256": "0d67481c2b3d855b27b162e21b39152100346098f75cb5da31db4003d9077680",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 64439,
@@ -468,27 +468,27 @@
                 "ldflags": "-fpic"
             },
             "cleanup": [
-		"/bin/corelist",
-		"/bin/cpan",
-		"/bin/enc*",
-		"/bin/h2*",
-		"/bin/instmodsh",
-		"/bin/json_pp",
-		"/bin/libnetcfg",
-		"/bin/perlbug",
-		"/bin/perldoc",
-		"/bin/perlivp",
-		"/bin/perlthanks",
-		"/bin/piconv",
-		"/bin/pl2pm",
-		"/bin/pod*",
-		"/bin/prove",
-		"/bin/ptar*",
-		"/bin/shasum",
-		"/bin/splain",
-		"/bin/streamzip",
-		"/bin/xsubpp",
-		"/bin/zipdetails",
+                "/bin/corelist",
+                "/bin/cpan",
+                "/bin/enc*",
+                "/bin/h2*",
+                "/bin/instmodsh",
+                "/bin/json_pp",
+                "/bin/libnetcfg",
+                "/bin/perlbug",
+                "/bin/perldoc",
+                "/bin/perlivp",
+                "/bin/perlthanks",
+                "/bin/piconv",
+                "/bin/pl2pm",
+                "/bin/pod*",
+                "/bin/prove",
+                "/bin/ptar*",
+                "/bin/shasum",
+                "/bin/splain",
+                "/bin/streamzip",
+                "/bin/xsubpp",
+                "/bin/zipdetails",
                 "/man",
                 "*.h"
             ],
