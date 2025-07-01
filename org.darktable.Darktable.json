@@ -215,8 +215,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.freedesktop.org/software/colord/releases/colord-1.4.7.tar.xz",
-                    "sha256": "de02d9910634ae159547585cec414e450f711c27235453b4f9b38a9f2361a653",
+                    "url": "https://www.freedesktop.org/software/colord/releases/colord-1.4.8.tar.xz",
+                    "sha256": "21500bd68975312a7f0f3ce6019d9f75f42aacaa75ca7115ec720b5445406896",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10190,
@@ -445,8 +445,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/strukturag/libheif/archive/v1.19.8.tar.gz",
-                    "sha256": "0d67481c2b3d855b27b162e21b39152100346098f75cb5da31db4003d9077680",
+                    "url": "https://github.com/strukturag/libheif/archive/v1.20.0.tar.gz",
+                    "sha256": "4c1f3022b074721c7391edcb29869b2f148fa4f47426fad9548712dc1406720d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 64439,
