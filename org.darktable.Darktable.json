@@ -252,8 +252,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/gphoto/libgphoto2/releases/download/v2.5.31/libgphoto2-2.5.31.tar.bz2",
-                    "sha256": "4f81c34c0b812bee67afd5f144940fbcbe01a2055586a6a1fa2d0626024a545b",
+                    "url": "https://github.com/gphoto/libgphoto2/releases/download/v2.5.32/libgphoto2-2.5.32.tar.bz2",
+                    "sha256": "02b29ab0bcfceda1c7f81c75ec7cb5e64d329cf4b8fd0fcd5bc5a89ff09561bc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 12558,
@@ -545,8 +545,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.50.0.tar.xz",
-                    "sha256": "dff3c000e400ace3a63b8a6f8b3b76b88ecfdffd4504a04aba4248372cdec045",
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.50.1.tar.xz",
+                    "sha256": "7e3e6c36decbd8f1eedd14d42db6674be03671c2204864befa2a41756c5c8fc4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5350,
