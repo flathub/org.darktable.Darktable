@@ -105,8 +105,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/benhoyt/inih/archive/refs/tags/r60.tar.gz",
-                    "sha256": "706aa05c888b53bd170e5d8aa8f8a9d9ccf5449dfed262d5103d1f292af26774",
+                    "url": "https://github.com/benhoyt/inih/archive/refs/tags/r61.tar.gz",
+                    "sha256": "7caf26a2202a4ca689df3fe4175dfa74e0faa18fcca07331bba934fd0ecb8f12",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 11600,
@@ -341,8 +341,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.4.tar.gz",
-                    "sha256": "63abac7c52f280e3e16fc868ac40e06449733bb19179008248ae7e34e4f19824",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.5.tar.gz",
+                    "sha256": "cb0c88710c906c9bfc59027eb147e780d508c7be1a90b43af3ec9e3c2987b70d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
