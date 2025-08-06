@@ -568,8 +568,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/darktable-org/darktable/releases/download/release-5.2.0/darktable-5.2.0.tar.xz",
-                    "sha256": "53a46cd46ef7118485c4abf4ab407c181639bb8634243ec0ed1f7c1e8299bec6",
+                    "url": "https://github.com/darktable-org/darktable/releases/download/release-5.2.1/darktable-5.2.1.tar.xz",
+                    "sha256": "02f1aa9ae93949e7bc54c34eeb5ff92c2b87f95d2547865df55c60467564ee11",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/darktable-org/darktable/releases/latest",
