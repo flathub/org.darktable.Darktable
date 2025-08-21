@@ -289,8 +289,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.12.tar.gz",
-                    "sha256": "8a1bc258f3149b5729c2f4f8ffd337c0e57f09096e4ba9784329f40c4a9035da",
+                    "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.2.1.tar.gz",
+                    "sha256": "b2c8a44c3e4695b74e9644c76f5f5480767355c6f98cde58ba0e82b4ad8c63ce",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 223366,
@@ -397,8 +397,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gmic.eu/files/source/gmic_3.5.5.tar.gz",
-                    "sha256": "f77999dbb6cd95e2766a0fa1c6ea3ec61007a981ff4644cba2cfba895ec1dff3",
+                    "url": "https://gmic.eu/files/source/gmic_3.6.0.tar.gz",
+                    "sha256": "64c32e1a58e9d7de3f84220183bab06423bd9823afacee9a9c7b23768b8edc33",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10217,
@@ -545,8 +545,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.50.1.tar.xz",
-                    "sha256": "7e3e6c36decbd8f1eedd14d42db6674be03671c2204864befa2a41756c5c8fc4",
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.51.0.tar.xz",
+                    "sha256": "60a7c2251cc2e588d5cd87bae567260617c6de0c22dca9cdbfc4c7d2b8990b62",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5350,
