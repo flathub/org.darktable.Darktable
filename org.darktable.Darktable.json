@@ -331,6 +331,34 @@
                 "/share/aclocal"
             ]
         },
+         {
+                    "name": "openjph",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.22.0.tar.gz",
+                            "sha256": "c9c6e9ec82ee8770ede41eeffe8acaab1814724c698b258c3de160dc09cb7d12",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 375199,
+                                "stable-only": true,
+                                "url-template": "https://github.com/aous72/OpenJPH/archive/refs/tags/$version.tar.gz"
+                            }
+                        }
+                    ],
+                    "buildsystem": "cmake-ninja",
+                    "builddir": true,
+                    "config-opts": [
+                        "-DOJPH_ENABLE_TIFF_SUPPORT=OFF",
+                        "-DOJPH_BUILD_EXECUTABLES=OFF"  
+                    ],
+                    "cleanup": [
+                        "/include",
+                        "/lib/pkgconfig"
+                    ]
+                }
+            ]
+        },
         {
             "name": "openexr",
             "buildsystem": "cmake-ninja",
