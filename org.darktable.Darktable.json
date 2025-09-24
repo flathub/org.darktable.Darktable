@@ -105,8 +105,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/benhoyt/inih/archive/refs/tags/r61.tar.gz",
-                    "sha256": "7caf26a2202a4ca689df3fe4175dfa74e0faa18fcca07331bba934fd0ecb8f12",
+                    "url": "https://github.com/benhoyt/inih/archive/refs/tags/r62.tar.gz",
+                    "sha256": "9c15fa751bb8093d042dae1b9f125eb45198c32c6704cd5481ccde460d4f8151",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 11600,
@@ -341,8 +341,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.5.tar.gz",
-                    "sha256": "cb0c88710c906c9bfc59027eb147e780d508c7be1a90b43af3ec9e3c2987b70d",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.4.0.tar.gz",
+                    "sha256": "d7b31637d7adc359f5e5a7517ba918cb5997bc1a4ae7a808ec874cdf91da93c0",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
@@ -397,8 +397,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gmic.eu/files/source/gmic_3.6.1.tar.gz",
-                    "sha256": "4cf36b7af48013651e40e2c17be646b748cffdd400a90562588a35af731f6c9e",
+                    "url": "https://gmic.eu/files/source/gmic_3.6.2.tar.gz",
+                    "sha256": "e85161d5eaf6eb413c2db6bc397c487617cea7916f21bce7a3b6acfa001fbf46",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10217,
