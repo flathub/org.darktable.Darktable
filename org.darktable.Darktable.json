@@ -12,7 +12,7 @@
         "--share=ipc",
         "--share=network",
         "--socket=x11",
-        "--socket-wayland",
+        "--socket=wayland",
         "--socket=fallback-X11",
         "--filesystem=host",
         "--talk-name=org.freedesktop.secrets",
