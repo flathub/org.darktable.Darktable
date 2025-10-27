@@ -1,7 +1,7 @@
 {
     "app-id": "org.darktable.Darktable",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "darktable",
     "rename-desktop-file": "org.darktable.darktable.desktop",
