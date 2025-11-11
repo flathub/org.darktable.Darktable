@@ -48,7 +48,6 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
-                "-DCMAKE_INSTALL_LIBDIR=/app/lib",
                 "-DBUILD_FOR_SSE=0",
                 "-DBUILD_FOR_SSE2=0",
                 "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
@@ -163,7 +162,6 @@
                 }
             ]
         },
-        "shared-modules/libusb/libusb.json",
         {
             "name": "libgusb",
             "buildsystem": "meson",
