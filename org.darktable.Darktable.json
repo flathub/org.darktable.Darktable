@@ -48,7 +48,6 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
-                "-DCMAKE_INSTALL_LIBDIR=/app/lib",
                 "-DBUILD_FOR_SSE=0",
                 "-DBUILD_FOR_SSE2=0",
                 "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
@@ -163,7 +162,6 @@
                 }
             ]
         },
-        "shared-modules/libusb/libusb.json",
         {
             "name": "libgusb",
             "buildsystem": "meson",
@@ -578,8 +576,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.cpan.org/src/5.0/perl-5.40.1.tar.gz",
-                    "sha256": "02f8c45bb379ed0c3de7514fad48c714fd46be8f0b536bfd5320050165a1ee26"
+                    "url": "https://www.cpan.org/src/5.0/perl-5.42.0.tar.gz",
+                    "sha256": "e093ef184d7f9a1b9797e2465296f55510adb6dab8842b0c3ed53329663096dc"
                 },
                 {
                     "type": "script",
