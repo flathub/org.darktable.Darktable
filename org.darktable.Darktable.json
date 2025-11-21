@@ -337,8 +337,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.4.3.tar.gz",
-                    "sha256": "06494da42eb91c47265ffbad02d0c73cf65d8ad7f24683b801f34d842c4ecb6d",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.4.4.tar.gz",
+                    "sha256": "7c663c3c41da9354b5af277bc2fd1d2360788050b4e0751a32bcd50e8abaef8f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
@@ -416,8 +416,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.25.2.tar.gz",
-                            "sha256": "ae5f09562cb811cb2fb881c5eb74583e18db941848cfa3c35787e2580f3defc6",
+                            "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.25.3.tar.gz",
+                            "sha256": "815b0d345daf3bbad72f3930d4f6c831643dcb2b734d8bb44d871d68db12f4d2",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 375199,
@@ -477,8 +477,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gmic.eu/files/source/gmic_3.6.3.tar.gz",
-                    "sha256": "45304f179f2200ba527c819bd911bd6a85c4a4999740c730c7ccdd164ce240ac",
+                    "url": "https://gmic.eu/files/source/gmic_3.6.4.tar.gz",
+                    "sha256": "c482f7aa0751aef263ec83dc5057c886fd3c862fa8ff73e15686e12a25c8e731",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10217,
@@ -625,8 +625,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.51.2.tar.xz",
-                    "sha256": "233d7143a2d58e60755eee9b76f559ec73ea2b3c297f5b503162ace95966b4e3",
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.52.0.tar.xz",
+                    "sha256": "3cd8fee86f69a949cb610fee8cd9264e6873d07fa58411f6060b3d62729ed7c5",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5350,
