@@ -230,6 +230,7 @@
             "buildsystem": "meson",
             "config-opts": [
                 "-Dman=false",
+                "-Dgtk4=false",
                 "-Ddocs=false"
             ],
             "sources": [
@@ -280,57 +281,6 @@
             ]
         },
         {
-            "name": "Imath",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.2.2.tar.gz",
-                    "sha256": "b4275d83fb95521510e389b8d13af10298ed5bed1c8e13efd961d91b1105e462",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 223366,
-                        "stable-only": true,
-                        "url-template": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v$version.tar.gz"
-                    }
-                }
-            ],
-            "cleanup": [
-                "/include/Imath",
-                "/lib/pkgconfig/Imath.pc"
-            ]
-        },
-        {
-            "name": "libdeflate",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DLIBDEFLATE_BUILD_STATIC_LIB=OFF"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/ebiggers/libdeflate/releases/download/v1.25/libdeflate-1.25.tar.gz",
-                    "sha256": "fed5cd22f00f30cc4c2e5329f94e2b8a901df9fa45ee255cb70e2b0b42344477",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 242778,
-                        "stable-only": true,
-                        "url-template": "https://github.com/ebiggers/libdeflate/releases/download/v$version/libdeflate-$version.tar.gz"
-                    }
-                }
-            ],
-            "cleanup": [
-                "/bin",
-                "/include",
-                "/lib/*.la",
-                "/lib/pkgconfig",
-                "/share/aclocal"
-            ]
-        },
-        {
             "name": "openexr",
             "sources": [
                 {
@@ -349,7 +299,6 @@
             "builddir": true,
             "config-opts": [
                 "-DOPENEXR_BUILD_TOOLS=OFF",
-                "-DOPENEXR_BUILD_EXAMPLES=OFF",
                 "-DBUILD_TESTING=OFF"
             ],
             "cleanup": [
