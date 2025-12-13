@@ -8,5 +8,5 @@ Lensfun
 -------
 
 Updating the lensfun database: change the commit in lensfun-git and the database
-will be to the latest version. We don't update the library due to API breakage.
+will be updated to the latest version. We don't update the library due to API breakage.
 
