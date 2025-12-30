@@ -436,54 +436,6 @@
             ]
         },
         {
-            "name": "libde265",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/strukturag/libde265/archive/v1.0.16.tar.gz",
-                    "sha256": "ed12c931759c1575848832f70db5071a001ac813db4e4f568ee08aef6e234d4e",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 11239,
-                        "stable-only": true,
-                        "url-template": "https://github.com/strukturag/libde265/archive/v$version.tar.gz"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "libheif",
-            "buildsystem": "cmake-ninja",
-            "build-options": {
-                "cxxflags": "-Wno-error=maybe-uninitialized"
-            },
-            "config-opts": [
-                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
-                "-DWITH_EXAMPLES=0",
-                "-DWITH_X265=0",
-                "-DWITH_RAV1E=0",
-                "-DWITH_DAV1D=0",
-                "-DCMAKE_COMPILE_WARNING_AS_ERROR=OFF"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/strukturag/libheif/archive/v1.20.2.tar.gz",
-                    "sha256": "b70340395d84184bb8dfc833dd51c95ae049435f7ff9abc7b505a08b5ee2bd2a",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 64439,
-                        "stable-only": true,
-                        "url-template": "https://github.com/strukturag/libheif/archive/v$version.tar.gz"
-                    }
-                }
-            ]
-        },
-        {
             "name": "perl",
             "no-autogen": true,
             "config-opts": [
