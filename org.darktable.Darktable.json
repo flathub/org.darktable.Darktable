@@ -525,8 +525,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.52.0.tar.xz",
-                    "sha256": "3cd8fee86f69a949cb610fee8cd9264e6873d07fa58411f6060b3d62729ed7c5",
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.53.0.tar.xz",
+                    "sha256": "5818bd7d80b061bbbdfec8a433d609dc8818a05991f731ffc4a561e2ca18c653",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5350,
@@ -548,8 +548,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/darktable-org/darktable/releases/download/release-5.4.0/darktable-5.4.0.tar.xz",
-                    "sha256": "2bf0baea78d27945cf09c33d8804f179e03a83ee19d2e927fd660ea46aca3b16",
+                    "url": "https://github.com/darktable-org/darktable/releases/download/release-5.4.1/darktable-5.4.1.tar.xz",
+                    "sha256": "afdc7c88a338a8cd2fac31c8450d076edbf73e956e4307260c83ebc195f845e4",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/darktable-org/darktable/releases/latest",
