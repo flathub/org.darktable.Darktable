@@ -286,8 +286,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.4.5.tar.gz",
-                    "sha256": "b10f21d3f8ff3211eb1687a2e2bf7a79d361aec8dfaca1f9b79f3d70755b4f48",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.4.8.tar.gz",
+                    "sha256": "0dd8d50e7f04219f3f925702564e994f9acdc6133ba537ec75eb6208119bec33",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
@@ -425,8 +425,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gmic.eu/files/source/gmic_3.7.2.tar.gz",
-                    "sha256": "4b7018cc4dc88bbb933564f2c0dc31d3090989c4a7f6eee2a490f98b2861b32f",
+                    "url": "https://gmic.eu/files/source/gmic_3.7.4.tar.gz",
+                    "sha256": "f9f0e5267b26b3c8e683092df87159173b649e69bccfd1481cacd4d294398adf",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10217,
