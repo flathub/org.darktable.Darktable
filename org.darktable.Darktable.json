@@ -25,10 +25,8 @@
     ],
     "cleanup": [
         "/include",
-        "/bin/*lensfun*",
         "/bin/metacopy",
         "/bin/pathtest",
-        "/bin/gphoto2*",
         "/doc",
         "/lib/cmake",
         "/lib/pkgconfig",
@@ -65,6 +63,7 @@
                 }
             },
             "cleanup": [
+                "/bin",
                 "/lib/python3.*"
             ],
             "post-install": [
@@ -92,7 +91,7 @@
                     "type": "git",
                     "dest": "lensfun-git",
                     "url": "https://github.com/lensfun/lensfun.git",
-                    "commit": "9b46201746f466614efe573cbc5c3d292dd5633d"
+                    "commit": "698a39eea69be00f4f25b6da6c1ad34b1f162b50"
                 }
             ]
         },
@@ -153,8 +152,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/zeux/pugixml/releases/download/v1.15/pugixml-1.15.tar.gz",
-                    "sha256": "655ade57fa703fb421c2eb9a0113b5064bddb145d415dd1f88c79353d90d511a",
+                    "url": "https://github.com/zeux/pugixml/releases/download/v1.16/pugixml-1.16.tar.gz",
+                    "sha256": "4cee1ca4aad395170f4c7a07824f3bdd41f28316c6e1e1090a1425b278ec0b4b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3728,
@@ -251,11 +250,14 @@
         },
         {
             "name": "libgphoto2",
+            "cleanup": [
+                "/bin"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/gphoto/libgphoto2/releases/download/v2.5.33/libgphoto2-2.5.33.tar.bz2",
-                    "sha256": "c55504e725cf44b6ca67e1cd7504ad36dc98d7a0469a9e8d627fd0fb3848aa1d",
+                    "url": "https://github.com/gphoto/libgphoto2/releases/download/v2.5.34/libgphoto2-2.5.34.tar.bz2",
+                    "sha256": "5df9e774eb4ab6087a193afff84dcafe9f666e3443fe29e73e6779f659ff7f28",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 12558,
@@ -287,8 +289,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.4.8.tar.gz",
-                    "sha256": "0dd8d50e7f04219f3f925702564e994f9acdc6133ba537ec75eb6208119bec33",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.4.13.tar.gz",
+                    "sha256": "1ed0cee48ac8c77da235c8ca8ab85d031d43cd790eda36af87fed4cf316cf2df",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
