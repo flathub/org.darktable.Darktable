@@ -1,7 +1,7 @@
 {
     "app-id": "org.darktable.Darktable",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "darktable",
     "rename-desktop-file": "org.darktable.darktable.desktop",
@@ -34,6 +34,7 @@
         "/lib/pkgconfig",
         "/lib/girepository-*",
         "/man",
+        "/share/bash-completion",
         "/share/doc",
         "/share/gir-1.0",
         "/share/gtk-doc",
@@ -537,6 +538,22 @@
             ]
         },
         {
+            "name": "potrace",
+            "cleanup": [
+                "/bin"
+            ],
+            "config-opts": [
+                "--with-libpotrace"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://downloads.sourceforge.net/project/potrace/1.16/potrace-1.16.tar.gz",
+                    "sha256": "be8248a17dedd6ccbaab2fcc45835bb0502d062e40fbded3bc56028ce5eb7acc"
+                }
+            ]
+        },
+        {
             "name": "darktable",
             "buildsystem": "cmake-ninja",
             "config-opts": [
@@ -548,18 +565,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/darktable-org/darktable/releases/download/release-5.4.1/darktable-5.4.1.tar.xz",
-                    "sha256": "afdc7c88a338a8cd2fac31c8450d076edbf73e956e4307260c83ebc195f845e4",
+                    "url": "https://github.com/darktable-org/darktable/releases/download/release-5.6.0/darktable-5.6.0.tar.xz",
+                    "sha256": "157d6d3847af8afcabe78944454786f73a886e08a504b4bd6114c2065fe006e4",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/darktable-org/darktable/releases/latest",
                         "version-query": ".tag_name | sub(\"^release-\"; \"\")",
                         "url-query": ".assets[] | select(.name==\"darktable-\" + $version + \".tar.xz\") | .browser_download_url"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "darktable-appstream-version.patch"
                 }
             ]
         }
