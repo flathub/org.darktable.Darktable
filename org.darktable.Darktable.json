@@ -528,12 +528,15 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.53.0.tar.xz",
-                    "sha256": "5818bd7d80b061bbbdfec8a433d609dc8818a05991f731ffc4a561e2ca18c653",
+                    "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.54.0.tar.xz",
+                    "sha256": "f689162364c10de79ef89aa8dbf48731eb057e34edbbd20aca510ce0154681a3",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 5350,
                         "stable-only": true,
+                        "versions": {
+                            "<": "2.55"
+                        },
                         "url-template": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-$version.tar.xz"
                     }
                 }
