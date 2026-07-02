@@ -564,7 +564,8 @@
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
                 "-DBINARY_PACKAGE_BUILD=1",
-                "-DTESTBUILD_OPENCL_PROGRAMS=OFF"
+                "-DTESTBUILD_OPENCL_PROGRAMS=OFF",
+                "-DUSE_AI=ON"
             ],
             "builddir": true,
             "sources": [
