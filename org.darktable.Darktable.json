@@ -559,6 +559,110 @@
             ]
         },
         {
+            "name": "onnxruntime",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "subdir": "cmake",
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-Donnxruntime_CMAKE_DEPS_MIRROR_DIR=../../external-deps",
+                "-Donnxruntime_BUILD_SHARED_LIB=ON",
+                "-Donnxruntime_BUILD_UNIT_TESTS=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/microsoft/onnxruntime.git",
+                    "tag": "v1.27.1",
+                    "commit": "df2ba1cf8108aa63627cf4cdf8f807880b938616"
+                },
+                {
+                    "type": "file",
+                    "url": "https://github.com/abseil/abseil-cpp/archive/refs/tags/20250814.0.zip",
+                    "sha256": "b2bdcf6682d8cb53df365bcc5d6c318a22e55821d9978a10fdb61404c026daff",
+                    "dest": "external-deps/github.com/abseil/abseil-cpp/archive/refs/tags",
+                    "dest-filename": "20250814.0.zip"
+                },
+                {
+                    "type": "file",
+                    "url": "https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.zip",
+                    "sha256": "f4300b96f7a304d4ef9bf6e0fa3ded72159f7f2d0f605bdde3e030a0dba7cf9f",
+                    "dest": "external-deps/github.com/HowardHinnant/date/archive/refs/tags",
+                    "dest-filename": "v3.0.1.zip"
+                },
+                {
+                    "type": "file",
+                    "url": "https://github.com/eigen-mirror/eigen/archive/1d8b82b0740839c0de7f1242a3585e3390ff5f33/eigen-1d8b82b0740839c0de7f1242a3585e3390ff5f33.zip",
+                    "sha256": "6a60d76351f97132669daeeb721d6bf14b008101883ad2d687a3201c5c461eb0",
+                    "dest": "external-deps/github.com/eigen-mirror/eigen/archive/1d8b82b0740839c0de7f1242a3585e3390ff5f33",
+                    "dest-filename": "eigen-1d8b82b0740839c0de7f1242a3585e3390ff5f33.zip"
+                },
+                {
+                    "type": "file",
+                    "url": "https://github.com/google/flatbuffers/archive/refs/tags/v23.5.26.zip",
+                    "sha256": "57bd580c0772fd1a726c34ab8bf05325293bc5f9c165060a898afa1feeeb95e1",
+                    "dest": "external-deps/github.com/google/flatbuffers/archive/refs/tags",
+                    "dest-filename": "v23.5.26.zip"
+                },
+                {
+                    "type": "file",
+                    "url": "https://github.com/nlohmann/json/archive/refs/tags/v3.11.3.zip",
+                    "sha256": "04022b05d806eb5ff73023c280b68697d12b93e1b7267a0b22a1a39ec7578069",
+                    "dest": "external-deps/github.com/nlohmann/json/archive/refs/tags",
+                    "dest-filename": "v3.11.3.zip"
+                },
+                {
+                    "type": "file",
+                    "url": "https://github.com/microsoft/GSL/archive/refs/tags/v4.2.1.zip",
+                    "sha256": "c9291d95f5f6e5c561990d06a589b01d89e553d0f366f0ce723dd1788e7a6076",
+                    "dest": "external-deps/github.com/microsoft/GSL/archive/refs/tags",
+                    "dest-filename": "v4.2.1.zip"
+                },
+                {
+                    "type": "file",
+                    "url": "https://github.com/boostorg/mp11/archive/refs/tags/boost-1.82.0.zip",
+                    "sha256": "81431bdc44c439a324e02c07ed067f8f556419fd86f2d8b486ff568df6aac899",
+                    "dest": "external-deps/github.com/boostorg/mp11/archive/refs/tags",
+                    "dest-filename": "boost-1.82.0.zip"
+                },
+                {
+                    "type": "file",
+                    "url": "https://github.com/onnx/onnx/archive/refs/tags/v1.21.0.zip",
+                    "sha256": "b8b56570d94ecce49fee94e6380db456bb42035722b967015c9dd6459359433e",
+                    "dest": "external-deps/github.com/onnx/onnx/archive/refs/tags",
+                    "dest-filename": "v1.21.0.zip"
+                },
+                {
+                    "type": "file",
+                    "url": "https://github.com/protocolbuffers/protobuf/archive/refs/tags/v21.12.zip",
+                    "sha256": "6a31b662deaeb0ac35e6287bda2f3369b19836e6c9f8828d4da444346f420298",
+                    "dest": "external-deps/github.com/protocolbuffers/protobuf/archive/refs/tags",
+                    "dest-filename": "v21.12.zip"
+                },
+                {
+                    "type": "file",
+                    "url": "https://github.com/pytorch/cpuinfo/archive/403d652dca4c1046e8145950b1c0997a9f748b57.zip",
+                    "sha256": "357d9824b8d3f4c05f0b2287e45b4e0d982422c27b67b968eb23a643dc52b5e2",
+                    "dest": "external-deps/github.com/pytorch/cpuinfo/archive",
+                    "dest-filename": "403d652dca4c1046e8145950b1c0997a9f748b57.zip"
+                },
+                {
+                    "type": "file",
+                    "url": "https://github.com/google/re2/archive/refs/tags/2024-07-02.zip",
+                    "sha256": "a835fe55fbdcd8e80f38584ab22d0840662c67f2feb36bd679402da9641dc71e",
+                    "dest": "external-deps/github.com/google/re2/archive/refs/tags",
+                    "dest-filename": "2024-07-02.zip"
+                },
+                {
+                    "type": "file",
+                    "url": "https://github.com/dcleblanc/SafeInt/archive/refs/tags/3.0.28.zip",
+                    "sha256": "3ffbd9a2fdff45da77da3e7269e9aa512ea43bed5c38ce8fd8f3d1068a032c3f",
+                    "dest": "external-deps/github.com/dcleblanc/SafeInt/archive/refs/tags",
+                    "dest-filename": "3.0.28.zip"
+                }
+            ]
+        },
+        {
             "name": "darktable",
             "buildsystem": "cmake-ninja",
             "config-opts": [
