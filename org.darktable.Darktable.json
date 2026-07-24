@@ -367,8 +367,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.26.3.tar.gz",
-                            "sha256": "29de006da7f1e8cf0cd7c3ec424cf29103e465052c00b5a5f0ccb7e1f917bb3f",
+                            "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.30.1.tar.gz",
+                            "sha256": "fb3ccf71af838ed2a42c6ea669308a2adaba115ae9d5862dfb1e2865b43eb5b8",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 375199,
@@ -402,8 +402,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.46/GraphicsMagick-1.3.46.tar.xz",
-                    "sha256": "c7c706a505e9c6c3764156bb94a0c9644d79131785df15a89c9f8721d1abd061",
+                    "url": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.48/GraphicsMagick-1.3.48.tar.xz",
+                    "sha256": "9218eb78179110f91371066ab75cb3b4dd034b9bb464b29ce9bab7a11979232b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1248,
@@ -428,8 +428,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gmic.eu/files/source/gmic_3.7.6.tar.gz",
-                    "sha256": "640bc1c72b1bb0eeb056771b1c57291403a4f3bffda372c4ea24ee2db8175a67",
+                    "url": "https://gmic.eu/files/source/gmic_4.0.3.tar.gz",
+                    "sha256": "40384654ac667c8c5d86543a1b6bf6d239fb9788d76ad671325e63ac36a5f82b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10217,
