@@ -273,8 +273,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/nzjrs/osm-gps-map/releases/download/1.2.0/osm-gps-map-1.2.0.tar.gz",
-                    "sha256": "ddec11449f37b5dffb4bca134d024623897c6140af1f9981a8acc512dbf6a7a5",
+                    "url": "https://github.com/nzjrs/osm-gps-map/releases/download/1.2.1/osm-gps-map-1.2.1.tar.gz",
+                    "sha256": "277d6835220a6a2954e09eb304a8cd6ff49b72542c97c4fc36e53e905f2a747c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6826,
@@ -289,8 +289,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.4.13.tar.gz",
-                    "sha256": "1ed0cee48ac8c77da235c8ca8ab85d031d43cd790eda36af87fed4cf316cf2df",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.4.14.tar.gz",
+                    "sha256": "13c3327100a7b92e4c6a048db03ef07ee2db8e79baa4c517c6fae71e5b80034b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
@@ -367,8 +367,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.26.3.tar.gz",
-                            "sha256": "29de006da7f1e8cf0cd7c3ec424cf29103e465052c00b5a5f0ccb7e1f917bb3f",
+                            "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.31.0.tar.gz",
+                            "sha256": "fe169dbbaae71a169a0a6a68dccb346616193252c1ca044217afa0d5d1dc436f",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 375199,
@@ -402,8 +402,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.46/GraphicsMagick-1.3.46.tar.xz",
-                    "sha256": "c7c706a505e9c6c3764156bb94a0c9644d79131785df15a89c9f8721d1abd061",
+                    "url": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.48/GraphicsMagick-1.3.48.tar.xz",
+                    "sha256": "9218eb78179110f91371066ab75cb3b4dd034b9bb464b29ce9bab7a11979232b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1248,
@@ -428,8 +428,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gmic.eu/files/source/gmic_3.7.6.tar.gz",
-                    "sha256": "640bc1c72b1bb0eeb056771b1c57291403a4f3bffda372c4ea24ee2db8175a67",
+                    "url": "https://gmic.eu/files/source/gmic_4.0.3.tar.gz",
+                    "sha256": "40384654ac667c8c5d86543a1b6bf6d239fb9788d76ad671325e63ac36a5f82b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10217,
