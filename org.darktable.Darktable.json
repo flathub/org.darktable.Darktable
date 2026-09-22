@@ -130,8 +130,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.8.tar.gz",
-                    "sha256": "ea51b0609f58a9afa063b60daa1539948b62247721e154f4fff0ad3aec9f9756",
+                    "url": "https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.9.tar.gz",
+                    "sha256": "700b76b97695b2fab4ef8c79619c68ae57d09e0c130724791cafbd39e0eb4aef",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 769,
@@ -289,8 +289,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.4.15.tar.gz",
-                    "sha256": "445ed5b0ea4d9cf98be3a4f219e419628b123b61dec65ccb743ab9b07fbebdaa",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.5.0.tar.gz",
+                    "sha256": "0dc41a9dd84c868ad89c892382f75f6835a73decbefab9366d6f168bf9322954",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
@@ -340,8 +340,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.25.zip",
-                            "sha256": "5ce391d1d09ff2f6b21af492fa72bd693e416a4a682ec48c04f91e5c0e16f383",
+                            "url": "https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.26.zip",
+                            "sha256": "cc64b9177e8c7eed2d3960a3dd9b0aa061ddc4c43c9067af1209e208e4a8144f",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 242778,
@@ -367,8 +367,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.26.3.tar.gz",
-                            "sha256": "29de006da7f1e8cf0cd7c3ec424cf29103e465052c00b5a5f0ccb7e1f917bb3f",
+                            "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.32.0.tar.gz",
+                            "sha256": "5cb1ebe18e5ee1322d23ff2130b37562d447d1ad5586c3d16cf84be3ae30f719",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 375199,
@@ -428,8 +428,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gmic.eu/files/source/gmic_3.7.6.tar.gz",
-                    "sha256": "640bc1c72b1bb0eeb056771b1c57291403a4f3bffda372c4ea24ee2db8175a67",
+                    "url": "https://gmic.eu/files/source/gmic_4.0.5.tar.gz",
+                    "sha256": "c6771c48693ed615b2e85d1db7a9626358d4606eb2c75dcf009b2924f396da59",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10217,
