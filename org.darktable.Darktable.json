@@ -1,8 +1,8 @@
 {
     "app-id": "org.darktable.Darktable",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
-    "sdk": "org.gnome.Sdk",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "26.08",
+    "sdk": "org.freedesktop.Sdk",
     "command": "darktable",
     "rename-desktop-file": "org.darktable.darktable.desktop",
     "rename-appdata-file": "org.darktable.darktable.appdata.xml",
@@ -80,8 +80,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/72/14/60bf9ba4b5c6d001af3b93be17a442deea8b1ce0eab2911de839cb0dfd3f/lxml-5.0.2.tar.gz",
-                    "sha256": "6399703c40ba53e2c3b72fdb56cb908d2b83c08082ecf17de839b27e68d1e598"
+		    "url": "https://files.pythonhosted.org/packages/23/ad/28ecd7cb894d172f3c9c80a075eeeb2017ac62e3632cee05a5f9493547eb/lxml-6.1.3.tar.gz",
+		    "sha256": "45222d94ddd511536f3b2f7d9deae3b2339b4ce0f075f1ca25703b07cad9dd21"
                 },
                 {
                     "type": "file",
@@ -428,8 +428,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.cpan.org/src/5.0/perl-5.42.0.tar.gz",
-                    "sha256": "e093ef184d7f9a1b9797e2465296f55510adb6dab8842b0c3ed53329663096dc"
+                    "url": "https://www.cpan.org/src/5.0/perl-5.44.0.tar.gz",
+                    "sha256": "3b855066b92491cb40e86affb1ca57d1a388aa43e51b91c7806a32c2f65f96c3"
                 },
                 {
                     "type": "script",
