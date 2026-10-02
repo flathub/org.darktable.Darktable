@@ -80,8 +80,8 @@
                 },
                 {
                     "type": "file",
-		    "url": "https://files.pythonhosted.org/packages/23/ad/28ecd7cb894d172f3c9c80a075eeeb2017ac62e3632cee05a5f9493547eb/lxml-6.1.3.tar.gz",
-		    "sha256": "45222d94ddd511536f3b2f7d9deae3b2339b4ce0f075f1ca25703b07cad9dd21"
+                    "url": "https://files.pythonhosted.org/packages/23/ad/28ecd7cb894d172f3c9c80a075eeeb2017ac62e3632cee05a5f9493547eb/lxml-6.1.3.tar.gz",
+                    "sha256": "45222d94ddd511536f3b2f7d9deae3b2339b4ce0f075f1ca25703b07cad9dd21"
                 },
                 {
                     "type": "file",
@@ -289,8 +289,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.4.15.tar.gz",
-                    "sha256": "445ed5b0ea4d9cf98be3a4f219e419628b123b61dec65ccb743ab9b07fbebdaa",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.5.1.tar.gz",
+                    "sha256": "61559d6d0657f228f8dd5e3165ed6b74437b95e81849ad41c6d3493c0c144c1d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
@@ -375,8 +375,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gmic.eu/files/source/gmic_3.7.6.tar.gz",
-                    "sha256": "640bc1c72b1bb0eeb056771b1c57291403a4f3bffda372c4ea24ee2db8175a67",
+                    "url": "https://gmic.eu/files/source/gmic_4.0.5.tar.gz",
+                    "sha256": "c6771c48693ed615b2e85d1db7a9626358d4606eb2c75dcf009b2924f396da59",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10217,
