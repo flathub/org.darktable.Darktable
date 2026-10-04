@@ -1,8 +1,8 @@
 {
     "app-id": "org.darktable.Darktable",
-    "runtime": "org.freedesktop.Platform",
-    "runtime-version": "26.08",
-    "sdk": "org.freedesktop.Sdk",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "51",
+    "sdk": "org.gnome.Sdk",
     "command": "darktable",
     "rename-desktop-file": "org.darktable.darktable.desktop",
     "rename-appdata-file": "org.darktable.darktable.appdata.xml",
