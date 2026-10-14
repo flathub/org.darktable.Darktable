@@ -273,8 +273,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/nzjrs/osm-gps-map/releases/download/1.2.1/osm-gps-map-1.2.1.tar.gz",
-                    "sha256": "277d6835220a6a2954e09eb304a8cd6ff49b72542c97c4fc36e53e905f2a747c",
+                    "url": "https://github.com/nzjrs/osm-gps-map/releases/download/1.2.2/osm-gps-map-1.2.2.tar.gz",
+                    "sha256": "051383588f0fdb60f59047c6559110c35025ea72b6eca700af532c020a6b55ec",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6826,
@@ -375,8 +375,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gmic.eu/files/source/gmic_4.0.5.tar.gz",
-                    "sha256": "c6771c48693ed615b2e85d1db7a9626358d4606eb2c75dcf009b2924f396da59",
+                    "url": "https://gmic.eu/files/source/gmic_4.0.6.tar.gz",
+                    "sha256": "4463f82277f800e81d56f43b82c8736994bd24ac1115320b965b67091d1366df",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10217,
